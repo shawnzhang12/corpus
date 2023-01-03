@@ -1,4 +1,4 @@
-bbaseURL = "http://localhost"
+bbaseURL = "https://shawnzhang.github.io/corpus"
 title = "Corpus of Stuff"
 theme = "hugo-geekdoc"
 
