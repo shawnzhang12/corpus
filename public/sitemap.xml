@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/BJJGrappling/</loc>
+  </url><url>
+    <loc>/Courses/</loc>
+  </url><url>
+    <loc>/Courses/Distributed-Systems/</loc>
+  </url><url>
+    <loc>/Courses/Engineering-Leadership/</loc>
+  </url><url>
+    <loc>/Courses/Natural-Language-Computing/</loc>
+  </url><url>
     <loc>/en/level1/</loc>
   </url><url>
     <loc>/en/level1/something/</loc>
