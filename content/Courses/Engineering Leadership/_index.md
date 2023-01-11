@@ -1,12 +1,12 @@
 ---
-title: "Fire"
+title: "Overview"
 weight: -20
 ---
 
-## Introduction
+What is Engineering Leadership?
 
-This is **bold** text, and this is *emphasized* text.
+Personal Learning Goals for Engineering Leadership
 
-Visit the [Hugo](https://gohugo.io) website!
+- Be able to concretely identify features of "leaders" that I like 
+- Creat a broad leadership path for me to become a better leader
 
-Hi there.
