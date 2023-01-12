@@ -1,15 +1,3 @@
----
-title: "Optimization in ML"
-weight: -20
----
-
-![](images/opt_background.png)
-
-## Introduction and Motivation
-
-Humans learn to design algorithms.
-
-Can algorithms *learn* to design algorithms? This is the domain of <u>machine learning</u> and <u>discrete optimization</u>.
 
 {{< hint type=note icon=gdoc_star title="Data Center Resource Management Example" >}}
 Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?

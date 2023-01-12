@@ -3,6 +3,8 @@ title: "Natural Language Computing"
 weight: -20
 ---
 
+![](NLP_cover.jpg)
+
 ## Overview
 
 natural language computing - get computers to understand what we say and write, statistics of language
@@ -15,11 +17,13 @@ one of the ultimate human-computer interaction
 
 a little deeper: how are sounds and text related, how are words combined to make sentences, meaning and organization
 
-linguistics knowledge: 
+### Definitions
 
-phonology: patterns of speech sounds
 
-morphology: changed by inflection
+
+**phonology:** patterns of speech sounds
+
+**morphology**: changed by inflection
 
 syntax: ordering and structure between word and phrases,
 
@@ -85,8 +89,14 @@ Term Count (count): term w in corpus C
 
 relative frequency (Fc): relative to the total number of tokens
 
-probabilistic chain rule!  P(A,B,C,D) = P(A)P(B|A)P(C|A,B)P(D|A,B,C)
+probabilistic chain rule
 
+
+
+
+$$
+P(A,B,C,D)=P(A)P(B|A)P(C|A,B)P(D|A,B,C)
+$$
 simple prediction: approximate conditional probabilities ex. P(food| I like chinese) = P(I like chinese food)/P(I like chinese)
 
 problem with chain rule: infinitely long sequences, division by 0, so assume stattistical independence and recent history (markov assumption of previous n grams) bi grams look at one word past

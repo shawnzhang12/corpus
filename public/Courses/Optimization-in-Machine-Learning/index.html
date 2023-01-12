@@ -12,16 +12,10 @@
 <meta name="generator" content="Hugo 0.108.0">
 
 
-  <meta name="description" content="#Week 1
-variables, constraints, metrics &ndash;&gt; optimization problem
-data center example, using services and machines
-importance: linear optimization accounts for 5% (1 trillion dollars) of economy quote
-tailor algorithms to family of instances, eg resource management or online matching
-overview
-AI: do non-trivial tasks well, do hard tasks that humans struggle with
-subgoals: perception, reasoning, control, planning
-examples: game playing - reasoning &#43; planning, autonomous driving - all four
-knowledge based ai - known facts, first order logic, and/or/not constraint satisfaction, need deep domain knowledge," />
+  <meta name="description" content="Introduction and Motivation Humans learn to design algorithms.
+Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.
+Data Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?
+Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is &ldquo;ON&rdquo; if a job is assigned to it." />
 
     <title>Optimization in ML | Shawn&#39;s Docs</title>
 
@@ -47,16 +41,10 @@ knowledge based ai - known facts, first order logic, and/or/not constraint satis
     content="Optimization in ML"
   />
   <meta property="og:site_name" content="Shawn's Docs" />
-  <meta property="og:description" content="#Week 1
-variables, constraints, metrics –&gt; optimization problem
-data center example, using services and machines
-importance: linear optimization accounts for 5% (1 trillion dollars) of economy quote
-tailor algorithms to family of instances, eg resource management or online matching
-overview
-AI: do non-trivial tasks well, do hard tasks that humans struggle with
-subgoals: perception, reasoning, control, planning
-examples: game playing - reasoning &#43; planning, autonomous driving - all four
-knowledge based ai - known facts, first order logic, and/or/not constraint satisfaction, need deep domain knowledge," />
+  <meta property="og:description" content="Introduction and Motivation Humans learn to design algorithms.
+Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.
+Data Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?
+Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is “ON” if a job is assigned to it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Courses/Optimization-in-Machine-Learning/" />
 
@@ -65,16 +53,10 @@ knowledge based ai - known facts, first order logic, and/or/not constraint satis
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Optimization in ML" />
-  <meta name="twitter:description" content="#Week 1
-variables, constraints, metrics –&gt; optimization problem
-data center example, using services and machines
-importance: linear optimization accounts for 5% (1 trillion dollars) of economy quote
-tailor algorithms to family of instances, eg resource management or online matching
-overview
-AI: do non-trivial tasks well, do hard tasks that humans struggle with
-subgoals: perception, reasoning, control, planning
-examples: game playing - reasoning &#43; planning, autonomous driving - all four
-knowledge based ai - known facts, first order logic, and/or/not constraint satisfaction, need deep domain knowledge," />
+  <meta name="twitter:description" content="Introduction and Motivation Humans learn to design algorithms.
+Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.
+Data Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?
+Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is “ON” if a job is assigned to it." />
 
 
   <script type="application/ld+json">
@@ -85,8 +67,8 @@ knowledge based ai - known facts, first order logic, and/or/not constraint satis
       "name": "Optimization in ML",
       "url" : "/Courses/Optimization-in-Machine-Learning/",
       "headline": "Optimization in ML",
-      "description": "#Week 1\nvariables, constraints, metrics –\u003e optimization problem\ndata center example, using services and machines\nimportance: linear optimization accounts for 5% (1 trillion dollars) of economy quote\ntailor algorithms to family of instances, eg resource management or online matching\noverview\nAI: do non-trivial tasks well, do hard tasks that humans struggle with\nsubgoals: perception, reasoning, control, planning\nexamples: game playing - reasoning \u002b planning, autonomous driving - all four\nknowledge based ai - known facts, first order logic, and\/or\/not constraint satisfaction, need deep domain knowledge,",
-      "wordCount" : "121",
+      "description": "Introduction and Motivation Humans learn to design algorithms.\nCan algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.\nData Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?\nEach machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is “ON” if a job is assigned to it.",
+      "wordCount" : "284",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -578,6 +560,60 @@ knowledge based ai - known facts, first order logic, and/or/not constraint satis
             </label>
 
             
+              
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/"
+                    class="gdoc-nav__entry"
+                  >
+                    Review of Linear Algebra
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+  </ul>
+
+            
           </li>
         
       
@@ -871,7 +907,50 @@ knowledge based ai - known facts, first order logic, and/or/not constraint satis
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Optimization in ML</h1>
-    <p>#Week 1</p>
+    <p><img
+  src="images/opt_background.png"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="introduction-and-motivation">
+        Introduction and Motivation
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#introduction-and-motivation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Introduction and Motivation" aria-label="Anchor to: Introduction and Motivation" href="#introduction-and-motivation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Humans learn to design algorithms.</p>
+<p>Can algorithms <em>learn</em> to design algorithms? This is the domain of <u>machine learning</u> and <u>discrete optimization</u>.</p>
+
+
+
+
+
+<blockquote class="gdoc-hint note">
+  <div class="gdoc-hint__title flex align-center"><svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
+      <span>Data Center Resource Management Example</span></div>
+  <div class="gdoc-hint__text"><p>Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?</p>
+<p>Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is &ldquo;ON&rdquo; if a job is assigned to it. Machines should have enough memory and CPU capacity to run all the services. Rewriting in mathematical notation:</p>
+<div class="table-wrap"> <table>
+<thead>
+<tr>
+<th>Variables</th>
+<th>Metrics</th>
+<th>Constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$y_m = 1$ if machine <em><strong>m</strong></em> is used <br /> $x_{s,m} = 1$ if service <em><strong>s</strong></em> runs on <em><strong>m</strong></em><br /> $x \in {0,1}^{S \times M}, y \in {0,1}^M$</td>
+<td><strong>minimize</strong> $\sum_{m=1}^{M} y_m$</td>
+<td>$\sum_{m=1}^M x_{s,m} =1 : \forall s$<br /> $y_m \geq x_{s,m} : \forall s,m$<br /> $\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) : \forall m$<br />   $\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) : \forall m$<br /></td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</blockquote>
+
 <p>variables, constraints, metrics &ndash;&gt; optimization problem</p>
 <p>data center example, using services and machines</p>
 <p>importance: linear optimization accounts for 5% (1 trillion dollars) of economy quote</p>

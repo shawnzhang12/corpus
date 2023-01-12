@@ -15,6 +15,23 @@
     </item>
     
     <item>
+      <title>Review of Linear Algebra</title>
+      <link>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</guid>
+      <description>Vectors and Matrices $$ A^{m \times n} = \begin{bmatrix} a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\ a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\ \vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \ a_{m1} &amp;amp; a_{m2} &amp;amp; \cdots &amp;amp; a_{mn} \end{bmatrix} $$
+$$
+$$
+Matrix Properties
+Systems of Linear Equations
+Products of $N_1&amp;hellip;..N_n$
+no solution, exactly one solution (independent), infinite solutions (linear dependence)
+geometric interpretation
+solving linear systems (real valued) easy because polynomial time</description>
+    </item>
+    
+    <item>
       <title>Running</title>
       <link>/Triathlon/run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
