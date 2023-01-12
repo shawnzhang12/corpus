@@ -908,7 +908,7 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
   >
     <h1>Optimization in ML</h1>
     <p><img
-  src="images/opt_background.png"
+  src="opt_background.png"
   alt=""
   
 /></p>
@@ -942,7 +942,7 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
 </thead>
 <tbody>
 <tr>
-<td>$y_m = 1$ if machine <em><strong>m</strong></em> is used <br /> $x_{s,m} = 1$ if service <em><strong>s</strong></em> runs on <em><strong>m</strong></em><br /> $x \in {0,1}^{S \times M}, y \in {0,1}^M$</td>
+<td>(y_m = 1) if machine <em><strong>m</strong></em> is used <br /> $x_{s,m} = 1$ if service <em><strong>s</strong></em> runs on <em><strong>m</strong></em><br /> $x \in {0,1}^{S \times M}, y \in {0,1}^M$</td>
 <td><strong>minimize</strong> $\sum_{m=1}^{M} y_m$</td>
 <td>$\sum_{m=1}^M x_{s,m} =1 : \forall s$<br /> $y_m \geq x_{s,m} : \forall s,m$<br /> $\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) : \forall m$<br />   $\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) : \forall m$<br /></td>
 </tr>
