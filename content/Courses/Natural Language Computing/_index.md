@@ -1,5 +1,5 @@
 ---
-title: "Fire"
+title: "Natural Language Computing"
 weight: -20
 ---
 
@@ -56,6 +56,56 @@ applications:
 machine translation: interpretation and generation, word-to-word was popular, syntactic ambiguities, definitions, solution use statistical machine translation
 
 waveforms and spectrograms, speech recognition
+
+
+
+Lecture 2: Corpora, Language Models and Smoothing
+
+What are we counting, how do we count thing?
+
+Corpora: A body of language data (not the same as vocabulary), useful when occurs naturally, could be domain specific (medical, law) so watch out for bias
+
+vocab: unique words
+
+size of corpus: total number of words
+
+word order is dependent! need sequence models
+
+P(car|the old) = 0 if it never appears in past, 
+
+solution: condition on a fixed number of words, check the sequences 'the old' and 'old car' probably both > 0
+
+Word prediction: P(w|w_t-1)
+
+N-grams: token sequences of length N, pros: cheap to train, good baseline
+
+language model: probabilities of words in an ordered sequence P(w1, w2, w3, ...)
+
+Term Count (count): term w in corpus C
+
+relative frequency (Fc): relative to the total number of tokens
+
+probabilistic chain rule!  P(A,B,C,D) = P(A)P(B|A)P(C|A,B)P(D|A,B,C)
+
+simple prediction: approximate conditional probabilities ex. P(food| I like chinese) = P(I like chinese food)/P(I like chinese)
+
+problem with chain rule: infinitely long sequences, division by 0, so assume stattistical independence and recent history (markov assumption of previous n grams) bi grams look at one word past
+
+bi gram probabilities P(want|I) = Count (I want)/Count(I)
+
+Evaluation of language models
+
+Shannon's method
+
+shoot darts at board, bigram once hit, another dart board
+
+Shakespeare as a corpus, quadrigrams, increasing context, 
+
+Extrinsic: external measure (task or application), sentiment analysis
+
+Intrinsic: complexity, other stuff
+
+
 
 
 

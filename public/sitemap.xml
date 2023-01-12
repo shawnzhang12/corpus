@@ -2,33 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/Triathlon/cycle/</loc>
-  </url><url>
     <loc>/BJJGrappling/</loc>
+  </url><url>
+    <loc>/Leetcode/</loc>
   </url><url>
     <loc>/Courses/</loc>
   </url><url>
+    <loc>/Triathlon/cycle/</loc>
+  </url><url>
     <loc>/Courses/Distributed-Systems/</loc>
-  </url><url>
-    <loc>/Courses/Natural-Language-Computing/</loc>
-  </url><url>
-    <loc>/en/level1/</loc>
-  </url><url>
-    <loc>/en/level1/something/</loc>
   </url><url>
     <loc>/Courses/Engineering-Leadership/</loc>
   </url><url>
+    <loc>/Judo/</loc>
+  </url><url>
+    <loc>/Courses/Natural-Language-Computing/</loc>
+  </url><url>
+    <loc>/Courses/Optimization-in-Machine-Learning/</loc>
+  </url><url>
     <loc>/Triathlon/run/</loc>
+  </url><url>
+    <loc>/</loc>
   </url><url>
     <loc>/Triathlon/swim/</loc>
   </url><url>
     <loc>/Triathlon/</loc>
-  </url><url>
-    <loc>/Courses/Optimization-in-Machine-Learning/</loc>
-  </url><url>
-    <loc>/en/</loc>
-  </url><url>
-    <loc>/</loc>
   </url><url>
     <loc>/tags/</loc>
   </url>

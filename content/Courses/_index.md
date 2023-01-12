@@ -1,5 +1,5 @@
 ---
-title: "Fire"
+title: "Courses"
 weight: -20
 ---
 

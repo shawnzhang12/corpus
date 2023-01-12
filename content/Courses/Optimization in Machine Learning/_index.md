@@ -1,3 +1,10 @@
+---
+title: "Optimization in ML"
+weight: -20
+---
+
+
+
 #Week 1
 
 variables, constraints, metrics --> optimization problem

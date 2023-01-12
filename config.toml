@@ -1,5 +1,5 @@
 bbaseURL = "https://shawnzhang.github.io/docs"
-title = "Learning Docs"
+title = "Shawn's Docs"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
