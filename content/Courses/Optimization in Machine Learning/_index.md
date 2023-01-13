@@ -17,7 +17,7 @@ Given Services $S$ with varying CPU and Memory demands and Machines $M$, how wou
 Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is "ON" if a job is assigned to it. Machines should have enough memory and CPU capacity to run all the services. Rewriting in mathematical notation:
 | Variables                                                    | Metrics                           | Constraints                                                  |
 | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
-| \(y_m = 1\) if machine ***m*** is used <br /> {{< katex >}}x_{s,m} = 1{{< \katex >}} if service ***s*** runs on ***m***<br /> $x \in \{0,1\}^{S \times M}, y \in \{0,1\}^M$ | **minimize** $\sum_{m=1}^{M} y_m$ | $\sum_{m=1}^M x_{s,m} =1 \: \forall s$<br /> $y_m \geq x_{s,m} \: \forall s,m$<br /> $\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) \: \forall m$<br />   $\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) \: \forall m$<br /> |
+| \(y_m = 1\) if machine ***m*** is used <br /> {{< katex >}}x_{s,m} = 1{{< /katex >}} if service ***s*** runs on ***m***<br /> $x \in \{0,1\}^{S \times M}, y \in \{0,1\}^M$ | **minimize** $\sum_{m=1}^{M} y_m$ | $\sum_{m=1}^M x_{s,m} =1 \: \forall s$<br /> $y_m \geq x_{s,m} \: \forall s,m$<br /> $\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) \: \forall m$<br />   $\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) \: \forall m$<br /> |
 
 {{< /hint >}}
 

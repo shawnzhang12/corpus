@@ -12,7 +12,6 @@ disablePathToLower = true
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
 enableEmoji = true
-katex = true
 
 # Needed for mermaid shortcodes
 [markup]
