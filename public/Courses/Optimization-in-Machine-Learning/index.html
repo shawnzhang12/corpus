@@ -13,9 +13,8 @@
 
 
   <meta name="description" content="Introduction and Motivation Humans learn to design algorithms.
-Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.
-Data Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?
-Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is &ldquo;ON&rdquo; if a job is assigned to it." />
+Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.
+&ldquo;[&hellip;] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.&rdquo; - Birge, J." />
 
     <title>Optimization in ML | Shawn&#39;s Docs</title>
 
@@ -42,9 +41,8 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
   />
   <meta property="og:site_name" content="Shawn's Docs" />
   <meta property="og:description" content="Introduction and Motivation Humans learn to design algorithms.
-Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.
-Data Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?
-Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is “ON” if a job is assigned to it." />
+Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.
+“[…] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.” - Birge, J." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Courses/Optimization-in-Machine-Learning/" />
 
@@ -54,9 +52,8 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Optimization in ML" />
   <meta name="twitter:description" content="Introduction and Motivation Humans learn to design algorithms.
-Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.
-Data Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?
-Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is “ON” if a job is assigned to it." />
+Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.
+“[…] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.” - Birge, J." />
 
 
   <script type="application/ld+json">
@@ -67,8 +64,8 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
       "name": "Optimization in ML",
       "url" : "/Courses/Optimization-in-Machine-Learning/",
       "headline": "Optimization in ML",
-      "description": "Introduction and Motivation Humans learn to design algorithms.\nCan algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization.\nData Center Resource Management Example Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?\nEach machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is “ON” if a job is assigned to it.",
-      "wordCount" : "287",
+      "description": "Introduction and Motivation Humans learn to design algorithms.\nCan algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.\n“[…] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.” - Birge, J.",
+      "wordCount" : "529",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -599,7 +596,7 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
                     href="/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/"
                     class="gdoc-nav__entry"
                   >
-                    Review of Linear Algebra
+                    1. Review of Linear Algebra
                   </a>
                 </span>
               
@@ -921,7 +918,10 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
     </h2>
 </div>
 <p>Humans learn to design algorithms.</p>
-<p>Can algorithms <em>learn</em> to design algorithms? This is the domain of <u>machine learning</u> and <u>discrete optimization</u>.</p>
+<p>Can algorithms <em>learn</em> to design algorithms? This is the domain of <u>machine learning</u> and <u>discrete optimization</u>. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.</p>
+<blockquote>
+<p>&ldquo;[&hellip;] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.&rdquo; <br/>- Birge, J. R. (2022)</p>
+</blockquote>
 
 
 
@@ -930,8 +930,21 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
 <blockquote class="gdoc-hint note">
   <div class="gdoc-hint__title flex align-center"><svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
       <span>Data Center Resource Management Example</span></div>
-  <div class="gdoc-hint__text"><p>Given Services $S$ with varying CPU and Memory demands and Machines $M$, how would you design a job scheduler?</p>
-<p>Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is &ldquo;ON&rdquo; if a job is assigned to it. Machines should have enough memory and CPU capacity to run all the services. Rewriting in mathematical notation:</p>
+  <div class="gdoc-hint__text"><link
+    rel="stylesheet"
+    href="/katex-6c55f6d5.min.css"
+  />
+  <script defer src="/js/katex-260824b9.bundle.min.js"></script>
+<span class="gdoc-katex ">
+  \(\)</span>
+Given Services 
+<span class="gdoc-katex ">
+  \(S\)</span> with varying CPU and Memory demands and Machines 
+<span class="gdoc-katex ">
+  \(M\)</span>, how would you design a job scheduler?
+<p>Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is &ldquo;ON&rdquo; if a job is assigned to it. Machines should have enough memory and CPU capacity to run all the services. With our variables, metrics, and constraints defined; we now have an optimization problem. Rewriting in mathematical notation:</div>
+</blockquote>
+
 <div class="table-wrap"> <table>
 <thead>
 <tr>
@@ -942,34 +955,189 @@ Each machine has multiple processors, so ideally we would want the minimum numbe
 </thead>
 <tbody>
 <tr>
-<td>(y_m = 1) if machine <em><strong>m</strong></em> is used <br /></td>
-<td></td>
-<td></td>
+<td>
+
+
+
+<span class="gdoc-katex ">
+  \(y_m = 1\)</span> if machine <b><i>m</i></b> is used <br />
+
+
+
+<span class="gdoc-katex ">
+  \(x_{s,m} = 1\)</span> if service <b><i>s</i></b> runs on <b><i>m</i></b> <br /> 
+
+
+
+<span class="gdoc-katex ">
+  \(x \in \{0,1\}^{S \times M}, y \in \{0,1\}^M\)</span></td>
+<td><strong>minimize</strong> 
+
+
+
+<span class="gdoc-katex ">
+  \(\sum_{m=1}^{M} y_m\)</span></td>
+<td>
+
+
+
+<span class="gdoc-katex ">
+  \(\sum_{m=1}^M x_{s,m} =1 \: \forall s\)</span><br/>
+
+
+
+<span class="gdoc-katex ">
+  \(y_m \geq x_{s,m} \: \forall s,m\)</span><br/>
+
+
+
+<span class="gdoc-katex ">
+  \(\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) \: \forall m\)</span><br/>
+
+
+
+<span class="gdoc-katex ">
+  \(\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) \: \forall m \)</span></td>
 </tr>
 </tbody>
 </table> </div>
-  <link
-    rel="stylesheet"
-    href="/katex-6c55f6d5.min.css"
-  />
-  <script defer src="/js/katex-260824b9.bundle.min.js"></script>
-<span class="gdoc-katex ">
-  \(x_{s,m} = 1\)</span> if service ***s*** runs on ***m***<br /> $x \in \{0,1\}^{S \times M}, y \in \{0,1\}^M$ | **minimize** $\sum_{m=1}^{M} y_m$ | $\sum_{m=1}^M x_{s,m} =1 \: \forall s$<br /> $y_m \geq x_{s,m} \: \forall s,m$<br /> $\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) \: \forall m$<br />   $\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) \: \forall m$<br /> |
+<div class="gdoc-page__anchorwrap">
+    <h4 id="artificial-intelligence">
+        Artificial Intelligence
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#artificial-intelligence" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Artificial Intelligence" aria-label="Anchor to: Artificial Intelligence" href="#artificial-intelligence">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
 </div>
+<p>Performs <strong>non-trivial tasks</strong> as well as or better than humans. Many sub-goals including Perception, Reasoning, Control, and Planning.</p>
+<p>E.g. <u>Speech Recognition:</u> Perception + Reasoning</p>
+<p><u>Autonomous Driving:</u> Perception + Reasoning + Control + Planning</p>
+<p><u>Game Playing:</u> Reasoning + Planning</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="knowledge-based-ai">
+        Knowledge-Based AI
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#knowledge-based-ai" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Knowledge-Based AI" aria-label="Anchor to: Knowledge-Based AI" href="#knowledge-based-ai">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Knowledge is represented via logic. We have a knowledge base (set of formulae) and models where all these facts hold. Easy to interpret.</p>
+<p>Fundamental Limitations: cannot perform better than human, requires domain knowledge, some things we can&rsquo;t explain to a computer (riding a bicycle)</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="data-based-ai--machine-learning">
+        Data-Based AI = Machine Learning
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#data-based-ai--machine-learning" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Data-Based AI = Machine Learning" aria-label="Anchor to: Data-Based AI = Machine Learning" href="#data-based-ai--machine-learning">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Pros: Don&rsquo;t need to learn from humans, performance improves with more examples</p>
+<p>Cons: Hard to interpret, may need <strong>many</strong> examples</p>
+<blockquote>
+<p><u>Machine Learning</u></p>
+<p>Study of algorithms that</p>
+<ul>
+<li>improve their <u>performance</u> P (Optimization)</li>
+<li>at some <u>task</u> T (Classification, Regression, Clustering)</li>
+<li>with <u>experience</u> E (Images, Text, Numbers)</li>
+</ul>
+<p>well-defined learning task: &lt;P,T,E&gt;</p>
 </blockquote>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="supervised-learning">
+        Supervised Learning
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#supervised-learning" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Supervised Learning" aria-label="Anchor to: Supervised Learning" href="#supervised-learning">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>With sufficient amount of &ldquo;similar&rdquo; data and an expressive model class, minimizing the loss function on the training data should yield an <strong>accurate model</strong> on <strong>unseen test data</strong>.</p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="classification-elements">
+        Classification Elements
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#classification-elements" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Classification Elements" aria-label="Anchor to: Classification Elements" href="#classification-elements">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<ol>
+<li>Data, Model, Loss</li>
+</ol>
+<p>Decision Tree predict <strong>discrete</strong> outcomes, LR predicts <strong>probabilities</strong> of outcomes.</p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="decision-trees">
+        Decision Trees
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#decision-trees" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Decision Trees" aria-label="Anchor to: Decision Trees" href="#decision-trees">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<ol>
+<li>Find <strong>best attribute</strong> to split on (e.g. humidity level)</li>
+<li>Find <strong>best split</strong> on chosen attribute (e.g. &lt;&gt; 80%)</li>
+<li>Repeat 1 &amp; 2 until <strong>stopping criterion</strong> is met (very few data points; node is pure(most training data in node have same label))</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="logistic-regression-lr">
+        Logistic Regression (LR)
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#logistic-regression-lr" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Logistic Regression (LR)" aria-label="Anchor to: Logistic Regression (LR)" href="#logistic-regression-lr">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>Parameters: 
 
-<p>variables, constraints, metrics &ndash;&gt; optimization problem</p>
-<p>data center example, using services and machines</p>
-<p>importance: linear optimization accounts for 5% (1 trillion dollars) of economy quote</p>
-<p>tailor algorithms to family of instances, eg resource management or online matching</p>
-<p>overview</p>
-<p>AI: do non-trivial tasks well, do hard tasks that humans struggle with</p>
-<p>subgoals: perception, reasoning, control, planning</p>
-<p>examples: game playing - reasoning + planning, autonomous driving - all four</p>
-<p>knowledge based ai - known facts, first order logic, and/or/not constraint satisfaction, need deep domain knowledge,</p>
-<p>data-based ai = machine learning: dont need to know, need many examples, explainability?</p>
-<p>supervised learning task: performance P (optimization here, loss function, metrics), task T (learn mapping from input to output), experience E (examples)</p>
-<p>not done</p>
+
+
+<span class="gdoc-katex ">
+  \(\beta_0, \beta_1, ..., \beta_d\)</span></p>
+<p>Model: 
+
+
+
+<span class="gdoc-katex ">
+  \[p(x;\beta) = \frac{1}{1 &#43; e^{-(\beta_0 &#43; \beta_1 x_1 &#43; ... &#43; \beta_d x_d)}}\]</span></p>
+<p>Data: 
+
+
+
+<span class="gdoc-katex ">
+  \(S = {(x_i, y_i)}_{i=1,...,n}\)</span> , 
+
+
+
+<span class="gdoc-katex ">
+  \(x_i\)</span>: example with d attributes, 
+
+
+
+<span class="gdoc-katex ">
+  \(y_i\)</span>: label</p>
+<p>Optimization: Use Maximum likelihood Estimation (MLE) to find parameters 
+
+
+
+<span class="gdoc-katex ">
+  \(\beta^*\)</span> that maximizes the likelihood: 
+
+
+
+<span class="gdoc-katex ">
+  \[\prod_{i=1}^{n} p(x_i;\beta)^{y_i} \times (1 - p(x_i;\beta))^{1-y_i}\]</span></p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="support-vector-machines-svm">
+        Support Vector Machines (SVM)
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#support-vector-machines-svm" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Support Vector Machines (SVM)" aria-label="Anchor to: Support Vector Machines (SVM)" href="#support-vector-machines-svm">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>I love them. Uses the <strong>Maximum-Margin</strong> Principle so that its robust to outliers.</p>
+<p><img
+  src="svm.png"
+  alt=""
+  
+/></p>
 
   </article>
 

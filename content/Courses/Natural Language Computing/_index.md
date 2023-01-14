@@ -5,15 +5,11 @@ weight: -20
 
 ![](NLP_cover.jpg)
 
-## Overview
+## Introduction and Motivation
 
-natural language computing - get computers to understand what we say and write, statistics of language
+How can we get computers to understand what we say and write? Applications include text classification, language translation, speech recognition, natural language understanding, information retrieval,interpretability and Large Language Models.
 
-application:
-
-text classification, language translation, speech recognition, natural language understanding, information retrieval, interpretability and LLMs
-
-one of the ultimate human-computer interaction
+The <u>ultimate human-computer interaction</u>. (Until brain chips become a thing.)
 
 a little deeper: how are sounds and text related, how are words combined to make sentences, meaning and organization
 
@@ -94,9 +90,7 @@ probabilistic chain rule
 
 
 
-$$
-P(A,B,C,D)=P(A)P(B|A)P(C|A,B)P(D|A,B,C)
-$$
+{{< katex display >}}P(A,B,C,D)=P(A)P(B|A)P(C|A,B)P(D|A,B,C){{< /katex >}}
 simple prediction: approximate conditional probabilities ex. P(food| I like chinese) = P(I like chinese food)/P(I like chinese)
 
 problem with chain rule: infinitely long sequences, division by 0, so assume stattistical independence and recent history (markov assumption of previous n grams) bi grams look at one word past

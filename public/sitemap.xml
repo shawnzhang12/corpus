@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</loc>
+  </url><url>
     <loc>/BJJGrappling/</loc>
   </url><url>
     <loc>/Leetcode/</loc>
@@ -19,8 +21,6 @@
     <loc>/Courses/Natural-Language-Computing/</loc>
   </url><url>
     <loc>/Courses/Optimization-in-Machine-Learning/</loc>
-  </url><url>
-    <loc>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</loc>
   </url><url>
     <loc>/Triathlon/run/</loc>
   </url><url>
