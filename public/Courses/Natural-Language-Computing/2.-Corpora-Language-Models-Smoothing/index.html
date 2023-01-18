@@ -12,9 +12,17 @@
 <meta name="generator" content="Hugo 0.108.0">
 
 
-  <meta name="description" content=" Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings " />
+  <meta name="description" content="Maximum Likelihood Estimate eueu
+Perplexity Equation here.
+Minimizing perplexity $\equiv$ maximizing probability of corpus
+Uniform corpus distribution = max perplexity
+Lower perplexity $\rightarrow$ Better Model
+trigram has lowest perplexity compared to bigram
+Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
+Patterns of Unigrams A few words occur very frequently.
+Frequency of frequencies:" />
 
-    <title>Distributed Systems | Shawn&#39;s Docs</title>
+    <title>2. Corpora, Language Models, Smoothing | Shawn&#39;s Docs</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -35,19 +43,35 @@
     
   <meta
     property="og:title"
-    content="Distributed Systems"
+    content="2. Corpora, Language Models, Smoothing"
   />
   <meta property="og:site_name" content="Shawn's Docs" />
-  <meta property="og:description" content=" Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings " />
+  <meta property="og:description" content="Maximum Likelihood Estimate eueu
+Perplexity Equation here.
+Minimizing perplexity $\equiv$ maximizing probability of corpus
+Uniform corpus distribution = max perplexity
+Lower perplexity $\rightarrow$ Better Model
+trigram has lowest perplexity compared to bigram
+Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
+Patterns of Unigrams A few words occur very frequently.
+Frequency of frequencies:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/Courses/Distributed-Systems/" />
+<meta property="og:url" content="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/" />
 
 <meta property="article:section" content="Courses" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Distributed Systems" />
-  <meta name="twitter:description" content=" Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings " />
+<meta name="twitter:title" content="2. Corpora, Language Models, Smoothing" />
+  <meta name="twitter:description" content="Maximum Likelihood Estimate eueu
+Perplexity Equation here.
+Minimizing perplexity $\equiv$ maximizing probability of corpus
+Uniform corpus distribution = max perplexity
+Lower perplexity $\rightarrow$ Better Model
+trigram has lowest perplexity compared to bigram
+Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
+Patterns of Unigrams A few words occur very frequently.
+Frequency of frequencies:" />
 
 
   <script type="application/ld+json">
@@ -55,16 +79,16 @@
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Courses",
-      "name": "Distributed Systems",
-      "url" : "/Courses/Distributed-Systems/",
-      "headline": "Distributed Systems",
-      "description": " Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings ",
-      "wordCount" : "46",
+      "name": "2. Corpora, Language Models, Smoothing",
+      "url" : "/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/",
+      "headline": "2. Corpora, Language Models, Smoothing",
+      "description": "Maximum Likelihood Estimate eueu\nPerplexity Equation here.\nMinimizing perplexity $\\equiv$ maximizing probability of corpus\nUniform corpus distribution = max perplexity\nLower perplexity $\\rightarrow$ Better Model\ntrigram has lowest perplexity compared to bigram\nZipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.\nPatterns of Unigrams A few words occur very frequently.\nFrequency of frequencies:",
+      "wordCount" : "307",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "/Courses/Distributed-Systems/"
+          "@id": "/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/"
       },
       "copyrightHolder" : "Shawn\u0027s Docs",
       "copyrightYear" : "0001",
@@ -148,7 +172,7 @@
   href="/custom.css"
   media="all"
 />
-  <link href="/Courses/Distributed-Systems/" rel="canonical" type="text/html" />
+  <link href="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -559,7 +583,7 @@
                 <span class="flex">
                   <a
                     href="/Courses/Distributed-Systems/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     Distributed Systems
                   </a>
@@ -678,7 +702,7 @@
                 <span class="flex">
                   <a
                     href="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     2. Corpora, Language Models, Smoothing
                   </a>
@@ -1149,7 +1173,15 @@
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Shawn's Docs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Courses/' href='/Courses/'><span itemprop='name'>Courses</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Distributed Systems</span><meta itemprop='position' content='3' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Shawn's Docs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Courses/' href='/Courses/'><span itemprop='name'>Courses</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Courses/Natural-Language-Computing/' href='/Courses/Natural-Language-Computing/'><span itemprop='name'>Natural Language Computing</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>2. Corpora, Language Models, Smoothing</span><meta itemprop='position' content='4' /></li>
+  
+
   
 
   
@@ -1167,35 +1199,145 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Distributed Systems</h1>
+    <h1>2. Corpora, Language Models, Smoothing</h1>
     <div class="gdoc-page__anchorwrap">
-    <h2 id="introduction">
-        Introduction
-        <a data-clipboard-text="/Courses/Distributed-Systems/#introduction" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Introduction" aria-label="Anchor to: Introduction" href="#introduction">
+    <h3 id="maximum-likelihood-estimate">
+        Maximum Likelihood Estimate
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#maximum-likelihood-estimate" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Maximum Likelihood Estimate" aria-label="Anchor to: Maximum Likelihood Estimate" href="#maximum-likelihood-estimate">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>eueu</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="perplexity">
+        Perplexity
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#perplexity" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Perplexity" aria-label="Anchor to: Perplexity" href="#perplexity">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Equation here.</p>
+<p>Minimizing perplexity $\equiv$ maximizing probability of corpus</p>
+<p>Uniform corpus distribution = max perplexity</p>
+<p><strong>Lower</strong> perplexity $\rightarrow$ <strong>Better</strong> Model</p>
+<p>trigram has lowest perplexity compared to bigram</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="zipf-and-the-natural-distributions-in-language">
+        Zipf and the Natural Distributions in Language
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#zipf-and-the-natural-distributions-in-language" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Zipf and the Natural Distributions in Language" aria-label="Anchor to: Zipf and the Natural Distributions in Language" href="#zipf-and-the-natural-distributions-in-language">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<ul>
-<li>Time in distributed systems (lampert clocks, vector clocks)</li>
-<li>Coordination and agreement</li>
-<li>Consensus with Paxos and Raft</li>
-<li>Replication</li>
-<li>Consistency and transactions</li>
-<li>Consistent hashing, CAP theorem, content delivery networks</li>
-<li>Distributed file systems (GFS)</li>
-<li>MapReduce</li>
-<li>Peer-to-peer systems, distributed hash tables (DHTs)</li>
-<li>Blockchains</li>
-<li>Time-permitting: Special topics</li>
-</ul>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="textbooks-and-readings">
-        Textbooks and Readings
-        <a data-clipboard-text="/Courses/Distributed-Systems/#textbooks-and-readings" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Textbooks and Readings" aria-label="Anchor to: Textbooks and Readings" href="#textbooks-and-readings">
+    <h3 id="sparseness">
+        Sparseness
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#sparseness" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Sparseness" aria-label="Anchor to: Sparseness" href="#sparseness">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h2>
+    </h3>
+</div>
+<p>Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="patterns-of-unigrams">
+        Patterns of Unigrams
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#patterns-of-unigrams" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Patterns of Unigrams" aria-label="Anchor to: Patterns of Unigrams" href="#patterns-of-unigrams">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>A few words occur <strong>very frequently</strong>.</p>
+<p>Frequency of frequencies:</p>
+<p>cool chart, ranking words</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="zipfs-law">
+        Zipf&rsquo;s Law
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#zipfs-law" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Zipf&rsquo;s Law" aria-label="Anchor to: Zipf&rsquo;s Law" href="#zipfs-law">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p><u>We humans are lazy.</u></p>
+<p>Speaker minimizes effort by having a <strong>small</strong> vocabulary of <strong>common</strong> words.</p>
+<p>Hearer minimizes effort by having a <strong>large</strong> vocabulary of <strong>less ambiguous</strong> words.</p>
+<p>Compromise: frequency and rank are inversely proportional.</p>
+<p>$$f \propto \frac{I}{r} \quad \text{i.e., for some k} \quad f \cdot r = k$$</p>
+<p>Zero prob in Shakespeare, some N-grams are just really rare</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="smoothing-mechanisms">
+        Smoothing mechanisms
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#smoothing-mechanisms" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Smoothing mechanisms" aria-label="Anchor to: Smoothing mechanisms" href="#smoothing-mechanisms">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="1-add-delta-smoothing-laplace">
+        1. Add-$\delta$ smoothing (Laplace)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#1-add-delta-smoothing-laplace" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Add-$\delta$ smoothing (Laplace)" aria-label="Anchor to: 1. Add-$\delta$ smoothing (Laplace)" href="#1-add-delta-smoothing-laplace">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="laplace-smoothing-delta--1">
+        Laplace Smoothing ($\delta$ = 1)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#laplace-smoothing-delta--1" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Laplace Smoothing ($\delta$ = 1)" aria-label="Anchor to: Laplace Smoothing ($\delta$ = 1)" href="#laplace-smoothing-delta--1">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>+1 imaginary count to all words, no more zero counts!</p>
+<p>Laplace smoothing results in non-zero probabilities which is great, but now the rich n-grams have reduced probabilities. Inflation and taxes! Robinhood. Steal from the rich and give to the poor.</p>
+<p>E.g. $P(to|want)$ went from 0.66 to 0.26 😞. That&rsquo;s a huge change!</p>
+<p>In <strong>extrinsic</strong> evaluations, the results are not great.</p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="generalized-laplace-delta--1">
+        Generalized Laplace ($\delta$ &lt; 1)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#generalized-laplace-delta--1" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Generalized Laplace ($\delta$ &lt; 1)" aria-label="Anchor to: Generalized Laplace ($\delta$ &lt; 1)" href="#generalized-laplace-delta--1">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>Sometimes work empirically (e.g. text categorization), sometimes not.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="2-good-turing">
+        2. Good-Turing
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#2-good-turing" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Good-Turing" aria-label="Anchor to: 2. Good-Turing" href="#2-good-turing">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p><strong>Idea</strong>: We still want to get rid of zeros. But now we want re-estimate counts of words using the MLE of words that occur count + 1 times. We look to our word neighbors in terms of frequency to make new estimates.</p>
+<p>What is the probability of seeing something <strong>new</strong> ($N_0$)?</p>
+<p>use n1</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="3-simple-interpolation">
+        3. Simple Interpolation
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#3-simple-interpolation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Simple Interpolation" aria-label="Anchor to: 3. Simple Interpolation" href="#3-simple-interpolation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Combine trigram, bigram, and unigram probabilities.</p>
+<p>Sum $\lambda$ = 1 constitutes a real distribution.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="4-absolute-discounting">
+        4. Absolute discounting
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#4-absolute-discounting" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Absolute discounting" aria-label="Anchor to: 4. Absolute discounting" href="#4-absolute-discounting">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Instead of multiplying by a lambda, just subtract a fixed delta from each non-zero count.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="heading">
+        
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/#heading" class="gdoc-page__anchor clip flex align-center" title="Anchor to: " aria-label="Anchor to: " href="#heading">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
 </div>
 
   </article>

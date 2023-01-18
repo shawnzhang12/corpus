@@ -15,6 +15,45 @@
     </item>
     
     <item>
+      <title>1. White</title>
+      <link>/Judo/White/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Judo/White/</guid>
+      <description> Break Fall chin tucked hips low, try not to roll 45 degree arms, never use elbows huge S L A P P Hip Throw (Ogoshi) Set opponent slightly off balance Grab behind with one arm Also reposition with feet to get MAX hip torque Scarf Hold (Kesa Gatame) OTHER arm around neck (compared to side control) other arm constraint opponent wrist and shoulder legs splayed, good to shuffle so doesn&amp;rsquo;t get trapped head close down and tight to opponent </description>
+    </item>
+    
+    <item>
+      <title>2. Corpora, Language Models, Smoothing</title>
+      <link>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</guid>
+      <description>Maximum Likelihood Estimate eueu
+Perplexity Equation here.
+Minimizing perplexity $\equiv$ maximizing probability of corpus
+Uniform corpus distribution = max perplexity
+Lower perplexity $\rightarrow$ Better Model
+trigram has lowest perplexity compared to bigram
+Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
+Patterns of Unigrams A few words occur very frequently.
+Frequency of frequencies:</description>
+    </item>
+    
+    <item>
+      <title>2. Optimization</title>
+      <link>/Courses/Optimization-in-Machine-Learning/2.-Optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Optimization-in-Machine-Learning/2.-Optimization/</guid>
+      <description>General Optimization $\underset{x}{\text{minimize}}: f(x)$
+$\text{subject to} \quad c_i(x) = 0, i \in \mathcal{E}$
+​ $c_i(x) \geq 0, i \in \mathcal{J}$
+for Variables $x$, Objective Function $f(x)$ that satisfies $f: \mathbb{R}^n \rightarrow \mathbb{R}$, Constraints $\mathcal{E}, \mathcal{J}$ Here&amp;rsquo;s a quick example.
+Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain it is not well-defined. There is no solution to the following optimization as you can get infinitely close to 1, but there is always some $\delta$ that can be subtracted to get you even closer.</description>
+    </item>
+    
+    <item>
       <title>Cycling</title>
       <link>/Triathlon/cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -24,12 +63,42 @@
     </item>
     
     <item>
+      <title>Positioning</title>
+      <link>/BJJGrappling/Positioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/BJJGrappling/Positioning/</guid>
+      <description> Side Control one arm wedged under head, twist that head same hand grabbing lats other hand connected/on stomach/elbow on hip tippy toe on feet and knees for pressure keep back relatively flat shoulders wide and pressing Closed Guard ankles crossed want high closed guard when breaking posture use primarily hips and knees to break posture use hand to control/swipe wrists use hand for necktie </description>
+    </item>
+    
+    <item>
       <title>Running</title>
       <link>/Triathlon/run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Triathlon/run/</guid>
       <description>General Running Tips 😑</description>
+    </item>
+    
+    <item>
+      <title>Submissions</title>
+      <link>/BJJGrappling/Submissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/BJJGrappling/Submissions/</guid>
+      <description> Triangle From Closed Guard Punch arm in Hip up, get ankles crossed Grab ankle, kick off hip and pivot to the side Relock legs Swing opponent arm to the other side Hip up, pull head, squeeze 😴 From Mount </description>
+    </item>
+    
+    <item>
+      <title>Sweeps</title>
+      <link>/BJJGrappling/Sweeps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/BJJGrappling/Sweeps/</guid>
+      <description>Closed Guard $\rightarrow$ Mount Hip Bump (optional) Break posture, begin as they regain posture
+Elbow up, arm up
+Keep necktie, or switch to cross shoulder
+hip the shit out of them, TORQUE</description>
     </item>
     
     <item>

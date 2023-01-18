@@ -3,10 +3,12 @@ title: "BJJ & Grappling"
 weight: -20
 ---
 
-## Introduction
+## Let's Get Started, 1 2:clap:
 
-This is **bold** text, and this is *emphasized* text.
+some basic documentation on techniques, tips and some playmaking.
 
-Visit the [Hugo](https://gohugo.io) website!
+Solely documentation, still need to grind out those reps for anything to stick.
 
-Hi there.
+Check out some nice techniques from the following resources:
+
+- <https://www.bjjsuccess.com/brazilian-jiu-jitsu-submissions/>
