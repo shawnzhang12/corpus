@@ -23,10 +23,10 @@ How are words and phrases used to produce **meaning**?
 
 | Category          | Definition                                                  | Example                                           |
 | ----------------- | ----------------------------------------------------------- | ------------------------------------------------- |
-| <u>Phonology</u>  | Study of patterns of speech <u>sounds</u>                   | "read" $\rightarrow$ */r iy d/*                   |
+| <u>Phonology</u>  | Study of patterns of speech <u>sounds</u>                   | "read" {{< katex >}}\rightarrow{{< /katex >}} */r iy d/*                   |
 | <u>Morphology</u> | How words can be <u>changed</u> by inflection or derivation | "read", "reads","reader", "reading"               |
-| <u>Syntax</u>     | <u>Ordering and structure</u> between words and phrases     | *NounPhrase $\rightarrow$ article adjective noun* |
-| <u>Semantics</u>  | Study of how <u>meaning</u> is created by words and phrases | "books" $\rightarrow$ :books:                     |
+| <u>Syntax</u>     | <u>Ordering and structure</u> between words and phrases     | *NounPhrase {{< katex >}}\rightarrow{{< /katex >}} article adjective noun* |
+| <u>Semantics</u>  | Study of how <u>meaning</u> is created by words and phrases | "books" {{< katex >}}\rightarrow{{< /katex >}} :books:                     |
 | <u>Pragmatics</u> | Study of meaning <u>in contexts</u>                         | "I'm on fire today"                               |
 
 ### Why is NLP difficult?
@@ -75,8 +75,8 @@ How is meaning created by use of words and phrases?
 
 "Every man loves a woman"
 
-1. $\forall x \: man(x) \exists y: (woman(y) \wedge loves (x,y))$
-2. $\exists y: woman(y) \wedge \forall x :\ (man(x) \rightarrow loves (x,y))$
+1. {{< katex >}}\forall x \: man(x) \exists y: (woman(y) \wedge loves (x,y)){{< /katex >}}
+2. {{< katex >}}\exists y: woman(y) \wedge \forall x :\ (man(x) \rightarrow loves (x,y)){{< /katex >}}
 
 "I made her duck"
 

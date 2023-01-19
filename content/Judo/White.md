@@ -16,7 +16,7 @@ weight: -20
 2. Grab behind with one arm
 3. Also reposition with feet to get MAX hip torque
 
-{{< youtube KrMk6G38UaY >}}
+{{< youtube KrMk6G38UaY title=>}}
 
 ### Scarf Hold (Kesa Gatame)
 
