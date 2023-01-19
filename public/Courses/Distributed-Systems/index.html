@@ -12,7 +12,7 @@
 <meta name="generator" content="Hugo 0.108.0">
 
 
-  <meta name="description" content=" Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings " />
+  <meta name="description" content="What is a distributed system? Some Definitions: Working definition: system comprised of several physically disjoint compute resources interconnected by a network. Coulouris et al.: hardware or software components located at networked computers communicate and coordinate their actions by passing messages. Tanenbaum: collection of independent computers that appears to its users as a single coherent system. Google Code University: Application that executes a collection of protocols to coordinate the actions of multiple processes on a network, such that all components cooperate together to perform a single or small set of related tasks." />
 
     <title>Distributed Systems | Shawn&#39;s Docs</title>
 
@@ -38,7 +38,7 @@
     content="Distributed Systems"
   />
   <meta property="og:site_name" content="Shawn's Docs" />
-  <meta property="og:description" content=" Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings " />
+  <meta property="og:description" content="What is a distributed system? Some Definitions: Working definition: system comprised of several physically disjoint compute resources interconnected by a network. Coulouris et al.: hardware or software components located at networked computers communicate and coordinate their actions by passing messages. Tanenbaum: collection of independent computers that appears to its users as a single coherent system. Google Code University: Application that executes a collection of protocols to coordinate the actions of multiple processes on a network, such that all components cooperate together to perform a single or small set of related tasks." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Courses/Distributed-Systems/" />
 
@@ -47,7 +47,7 @@
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Distributed Systems" />
-  <meta name="twitter:description" content=" Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings " />
+  <meta name="twitter:description" content="What is a distributed system? Some Definitions: Working definition: system comprised of several physically disjoint compute resources interconnected by a network. Coulouris et al.: hardware or software components located at networked computers communicate and coordinate their actions by passing messages. Tanenbaum: collection of independent computers that appears to its users as a single coherent system. Google Code University: Application that executes a collection of protocols to coordinate the actions of multiple processes on a network, such that all components cooperate together to perform a single or small set of related tasks." />
 
 
   <script type="application/ld+json">
@@ -58,8 +58,8 @@
       "name": "Distributed Systems",
       "url" : "/Courses/Distributed-Systems/",
       "headline": "Distributed Systems",
-      "description": " Introduction Time in distributed systems (lampert clocks, vector clocks) Coordination and agreement Consensus with Paxos and Raft Replication Consistency and transactions Consistent hashing, CAP theorem, content delivery networks Distributed file systems (GFS) MapReduce Peer-to-peer systems, distributed hash tables (DHTs) Blockchains Time-permitting: Special topics Textbooks and Readings ",
-      "wordCount" : "46",
+      "description": "What is a distributed system? Some Definitions: Working definition: system comprised of several physically disjoint compute resources interconnected by a network. Coulouris et al.: hardware or software components located at networked computers communicate and coordinate their actions by passing messages. Tanenbaum: collection of independent computers that appears to its users as a single coherent system. Google Code University: Application that executes a collection of protocols to coordinate the actions of multiple processes on a network, such that all components cooperate together to perform a single or small set of related tasks.",
+      "wordCount" : "358",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -569,6 +569,89 @@
             </label>
 
             
+              
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/Courses/Distributed-Systems/1.-Distributed-Systems-Examples/"
+                    class="gdoc-nav__entry"
+                  >
+                    1. Distributed Systems Examples
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">2. Time - How do we deal with time in distributed systems?</span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+  </ul>
+
+            
           </li>
         
       
@@ -903,7 +986,7 @@
                     href="/Judo/White/"
                     class="gdoc-nav__entry"
                   >
-                    1. White
+                    White
                   </a>
                 </span>
               
@@ -1168,35 +1251,151 @@
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Distributed Systems</h1>
-    <div class="gdoc-page__anchorwrap">
-    <h2 id="introduction">
-        Introduction
-        <a data-clipboard-text="/Courses/Distributed-Systems/#introduction" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Introduction" aria-label="Anchor to: Introduction" href="#introduction">
+    <p><img
+  src="background.jpg"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="what-is-a-distributed-system">
+        What is a distributed system?
+        <a data-clipboard-text="/Courses/Distributed-Systems/#what-is-a-distributed-system" class="gdoc-page__anchor clip flex align-center" title="Anchor to: What is a distributed system?" aria-label="Anchor to: What is a distributed system?" href="#what-is-a-distributed-system">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="some-definitions">
+        Some Definitions:
+        <a data-clipboard-text="/Courses/Distributed-Systems/#some-definitions" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Some Definitions:" aria-label="Anchor to: Some Definitions:" href="#some-definitions">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<ol>
+<li>Working definition: system comprised of several <strong>physically disjoint compute resources</strong> interconnected by a <strong>network</strong>.</li>
+<li>Coulouris et al.: <strong>hardware</strong> or <strong>software</strong> components located at <strong>networked computers communicate</strong> and <strong>coordinate</strong> their actions by <strong>passing messages</strong>.</li>
+<li>Tanenbaum: <strong>collection of  independent computers</strong> that appears to its users as <strong>a single coherent system</strong>.</li>
+<li>Google Code University: <strong>Application</strong> that executes a collection of <strong>protocols</strong> to <strong>coordinate the actions</strong> of multiple <strong>processes</strong> on a <strong>network</strong>, such that all components <strong>cooperate</strong> together to perform a <strong>single</strong> or small set of <strong>related tasks</strong>.</li>
+</ol>
+<p>We are managing <strong>trade-offs</strong> and how to <strong>navigate the systems design space</strong>.</p>
+<p><strong>Node</strong>: Physically separable computing entity (process, client, server, machine, container)</p>
+<p><strong>Message</strong>: Unit of communication among nodes (packet, data, RPC (remote procedure call), communication)</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="why-build-a-distributed-system">
+        Why build a distributed system?
+        <a data-clipboard-text="/Courses/Distributed-Systems/#why-build-a-distributed-system" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Why build a distributed system?" aria-label="Anchor to: Why build a distributed system?" href="#why-build-a-distributed-system">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Centralized system is simpler:</p>
+<ul>
+<li>local memory, storage</li>
+<li>failure model</li>
+<li>maintenance</li>
+<li>data security</li>
+</ul>
+<p>BUT,</p>
+<ul>
+<li><strong>Vertical scaling</strong> costs more than horizontal scaling (disks, IO channels, sockets)</li>
+<li>single point of failure</li>
+<li>resources can be inherently distributed (IOT)</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="related-disciplines">
+        Related Disciplines:
+        <a data-clipboard-text="/Courses/Distributed-Systems/#related-disciplines" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Related Disciplines:" aria-label="Anchor to: Related Disciplines:" href="#related-disciplines">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<ul>
+<li>Networking (Layers, protocols, TCP/IP)</li>
+<li>Databases (Data management, Transactions, Consistency)</li>
+<li>Security (Threats, defenses)</li>
+<li>Parallel Computing (Concurrency, Massively parallel, HPC, NUMA, UMA)</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="characteristics-of-distributed-systems">
+        Characteristics of distributed systems
+        <a data-clipboard-text="/Courses/Distributed-Systems/#characteristics-of-distributed-systems" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Characteristics of distributed systems" aria-label="Anchor to: Characteristics of distributed systems" href="#characteristics-of-distributed-systems">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="reliability">
+        Reliability
+        <a data-clipboard-text="/Courses/Distributed-Systems/#reliability" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Reliability" aria-label="Anchor to: Reliability" href="#reliability">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Probability of a system to perform its required functions under stated conditions for a specified period of time (to run correctly without failure). Expressed as Mean Time Between Failure (MTBF), failure rate.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="availability-and-high-availability">
+        Availability and high-availability
+        <a data-clipboard-text="/Courses/Distributed-Systems/#availability-and-high-availability" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Availability and high-availability" aria-label="Anchor to: Availability and high-availability" href="#availability-and-high-availability">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Proportion of time a system is an a functioning state, (1 - unavailable). Expressed as decimal or percentage. Ratio of time usable over entire time.</p>
+<p>Class of 9. E.g. One 9 is available 90% of the time.</p>
+<p><strong>Note</strong>: Availability 
+
+  
+  <link
+    rel="stylesheet"
+    href="/katex-6c55f6d5.min.css"
+  />
+  <script defer src="/js/katex-260824b9.bundle.min.js"></script>
+  
+
+
+
+<span class="gdoc-katex ">
+  \(\neq\)</span> Reliability (down 1 ms every hour (highly available) vs. down two weeks a year (highly reliable))</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="distributed-systems-design-fallacies">
+        Distributed Systems Design Fallacies
+        <a data-clipboard-text="/Courses/Distributed-Systems/#distributed-systems-design-fallacies" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Distributed Systems Design Fallacies" aria-label="Anchor to: Distributed Systems Design Fallacies" href="#distributed-systems-design-fallacies">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<ol>
+<li>The network is reliable.</li>
+<li>Latency is zero.</li>
+<li>Bandwidth is infinite.</li>
+<li>The network is secure.</li>
+<li>Topology doesn&rsquo;t change.</li>
+<li>There is one administrator.</li>
+<li>Transport cost is zero.</li>
+<li>The network is homogeneous.</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="course-overview">
+        Course Overview
+        <a data-clipboard-text="/Courses/Distributed-Systems/#course-overview" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Course Overview" aria-label="Anchor to: Course Overview" href="#course-overview">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
 <ul>
-<li>Time in distributed systems (lampert clocks, vector clocks)</li>
+<li>Time in distributed systems (Lampert clocks, vector clocks)</li>
 <li>Coordination and agreement</li>
-<li>Consensus with Paxos and Raft</li>
+<li>Consensus with Paxos</li>
 <li>Replication</li>
 <li>Consistency and transactions</li>
-<li>Consistent hashing, CAP theorem, content delivery networks</li>
+<li>Consistent hashing, CAP theorem, web caching</li>
 <li>Distributed file systems (GFS)</li>
-<li>MapReduce</li>
+<li>MapReduce, Spark</li>
 <li>Peer-to-peer systems, distributed hash tables (DHTs)</li>
 <li>Blockchains</li>
-<li>Time-permitting: Special topics</li>
+<li>Time-permitting: Publish/Subscribe, clouds</li>
 </ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="textbooks-and-readings">
-        Textbooks and Readings
-        <a data-clipboard-text="/Courses/Distributed-Systems/#textbooks-and-readings" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Textbooks and Readings" aria-label="Anchor to: Textbooks and Readings" href="#textbooks-and-readings">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
 
   </article>
 

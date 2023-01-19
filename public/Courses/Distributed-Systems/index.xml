@@ -5,5 +5,25 @@
     <link>/Courses/Distributed-Systems/</link>
     <description>Recent content in Distributed Systems on Shawn&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/Courses/Distributed-Systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Distributed Systems Examples</title>
+      <link>/Courses/Distributed-Systems/1.-Distributed-Systems-Examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Distributed-Systems/1.-Distributed-Systems-Examples/</guid>
+      <description>Massively Scalable Key-Value Stores What are key-value stores? Container for key-value pairs (databases) Distributed, multi-component Non-relational Simpler query semantics for increased scalability, speed, availability, and flexibility Why needed?
+Big data. Huge amount of internet users, stored data, frequent updates, fast retrievals. Good for failure detection, failure recovery, replication, memory store, versioning.
+Horizontal scalability: user growth, more nodes Performance: single-record read and write operations Flexibility: adapt to changing data definitions Reliability: provides failure recovery (failure is the norm), thousands of components at play Availability and geo-distribution: Users are worldwide, data can be accessed worldwide Main operations: PUT, GET, and DELETE.</description>
+    </item>
+    
+    <item>
+      <title>2. Time - How do we deal with time in distributed systems?</title>
+      <link>/Courses/Distributed-Systems/2.-Time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Distributed-Systems/2.-Time/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

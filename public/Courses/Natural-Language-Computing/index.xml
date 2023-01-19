@@ -13,9 +13,9 @@
       <guid>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</guid>
       <description>Maximum Likelihood Estimate eueu
 Perplexity Equation here.
-Minimizing perplexity $\equiv$ maximizing probability of corpus
+Minimizing perplexity \(\equiv\) maximizing probability of corpus
 Uniform corpus distribution = max perplexity
-Lower perplexity $\rightarrow$ Better Model
+Lower perplexity \(\rightarrow\) Better Model
 trigram has lowest perplexity compared to bigram
 Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
 Patterns of Unigrams A few words occur very frequently.

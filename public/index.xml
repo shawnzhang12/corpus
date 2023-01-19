@@ -6,21 +6,23 @@
     <description>Recent content on Shawn&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>1. Distributed Systems Examples</title>
+      <link>/Courses/Distributed-Systems/1.-Distributed-Systems-Examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Distributed-Systems/1.-Distributed-Systems-Examples/</guid>
+      <description>Massively Scalable Key-Value Stores What are key-value stores? Container for key-value pairs (databases) Distributed, multi-component Non-relational Simpler query semantics for increased scalability, speed, availability, and flexibility Why needed?
+Big data. Huge amount of internet users, stored data, frequent updates, fast retrievals. Good for failure detection, failure recovery, replication, memory store, versioning.
+Horizontal scalability: user growth, more nodes Performance: single-record read and write operations Flexibility: adapt to changing data definitions Reliability: provides failure recovery (failure is the norm), thousands of components at play Availability and geo-distribution: Users are worldwide, data can be accessed worldwide Main operations: PUT, GET, and DELETE.</description>
+    </item>
+    
+    <item>
       <title>1. Review of Linear Algebra</title>
       <link>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</guid>
       <description>Vectors and Matrices \[a = \begin{bmatrix} 1\\ 2\\ 3\\ \end{bmatrix} \in \R^3, A^{m \times n} = \begin{bmatrix}a_{11} &amp;amp; a_{12} &amp;amp; \cdots &amp;amp; a_{1n}\\a_{21} &amp;amp; a_{22} &amp;amp; \cdots &amp;amp; a_{2n}\\\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\a_{m1} &amp;amp; a_{m2} &amp;amp; \cdots &amp;amp; a_{mn}\end{bmatrix}\] Matrix Operations and Properties Addition The sum of two matrices \(A \in \R^{m \times n}, B \in \R^{m \times n}\) is defined as the element-wise sum, i.</description>
-    </item>
-    
-    <item>
-      <title>1. White</title>
-      <link>/Judo/White/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/Judo/White/</guid>
-      <description> Break Fall chin tucked hips low, try not to roll 45 degree arms, never use elbows huge S L A P P Hip Throw (Ogoshi) Set opponent slightly off balance Grab behind with one arm Also reposition with feet to get MAX hip torque Scarf Hold (Kesa Gatame) OTHER arm around neck (compared to side control) other arm constraint opponent wrist and shoulder legs splayed, good to shuffle so doesn&amp;rsquo;t get trapped head close down and tight to opponent </description>
     </item>
     
     <item>
@@ -31,9 +33,9 @@
       <guid>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</guid>
       <description>Maximum Likelihood Estimate eueu
 Perplexity Equation here.
-Minimizing perplexity $\equiv$ maximizing probability of corpus
+Minimizing perplexity \(\equiv\) maximizing probability of corpus
 Uniform corpus distribution = max perplexity
-Lower perplexity $\rightarrow$ Better Model
+Lower perplexity \(\rightarrow\) Better Model
 trigram has lowest perplexity compared to bigram
 Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
 Patterns of Unigrams A few words occur very frequently.
@@ -46,11 +48,18 @@ Frequency of frequencies:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Courses/Optimization-in-Machine-Learning/2.-Optimization/</guid>
-      <description>General Optimization $\underset{x}{\text{minimize}}: f(x)$
-$\text{subject to} \quad c_i(x) = 0, i \in \mathcal{E}$
-​ $c_i(x) \geq 0, i \in \mathcal{J}$
-for Variables $x$, Objective Function $f(x)$ that satisfies $f: \mathbb{R}^n \rightarrow \mathbb{R}$, Constraints $\mathcal{E}, \mathcal{J}$ Here&amp;rsquo;s a quick example.
-Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain it is not well-defined. There is no solution to the following optimization as you can get infinitely close to 1, but there is always some $\delta$ that can be subtracted to get you even closer.</description>
+      <description>General Optimization \(\underset{x}{\text{minimize}}\: f(x)\) \(\text{subject to} \quad c_i(x) = 0, i \in \mathcal{E}\) ​ \(c_i(x) \geq 0, i \in \mathcal{J}\)
+for Variables \(x\), Objective Function \(f(x)\) that satisfies \(f: \mathbb{R}^n \rightarrow \mathbb{R}\), Constraints \(\mathcal{E}, \mathcal{J}\) Here&amp;rsquo;s a quick example.
+Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain it is not well-defined. There is no solution to the following optimization as you can get infinitely close to 1, but there is always some \(\delta\) that can be subtracted to get you even closer.</description>
+    </item>
+    
+    <item>
+      <title>2. Time - How do we deal with time in distributed systems?</title>
+      <link>/Courses/Distributed-Systems/2.-Time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Courses/Distributed-Systems/2.-Time/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -95,10 +104,7 @@ Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/BJJGrappling/Sweeps/</guid>
-      <description>Closed Guard $\rightarrow$ Mount Hip Bump (optional) Break posture, begin as they regain posture
-Elbow up, arm up
-Keep necktie, or switch to cross shoulder
-hip the shit out of them, TORQUE</description>
+      <description> Closed Guard \(\rightarrow\) Mount </description>
     </item>
     
     <item>
@@ -109,6 +115,15 @@ hip the shit out of them, TORQUE</description>
       <guid>/Triathlon/swim/</guid>
       <description>General Swimming Tips 🐬 Keep Body Horizontal Head Looking Straight Down Enter Stroke Extended, Angle Fingers Flat on the Surface Turn Body to Breathe High Elbow 4 Quick Kicks Per Stroke Keep Non-Pulling Arm Straight in Water until Other Arm almost Enters Workouts Here are some typical workout plans to get started:
 Warm up Rest Time 150m easy, 50m any @ 2:45 ~ 3:00 pace 30s Fill in Thursday Main Rest Time 300 easys Fill in Thursday Swimming Forms Freestyle (Frontcrawl) Fast.</description>
+    </item>
+    
+    <item>
+      <title>White</title>
+      <link>/Judo/White/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Judo/White/</guid>
+      <description> Break Fall chin tucked hips low, try not to roll 45 degree arms, never use elbows huge S L A P P Hip Throw (Ogoshi) Set opponent slightly off balance Grab behind with one arm Also reposition with feet to get MAX hip torque Scarf Hold (Kesa Gatame) OTHER arm around neck (compared to side control) other arm constraint opponent wrist and shoulder legs splayed, good to shuffle so doesn&amp;rsquo;t get trapped head close down and tight to opponent </description>
     </item>
     
   </channel>

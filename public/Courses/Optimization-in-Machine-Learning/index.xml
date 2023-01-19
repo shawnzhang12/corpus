@@ -20,11 +20,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Courses/Optimization-in-Machine-Learning/2.-Optimization/</guid>
-      <description>General Optimization $\underset{x}{\text{minimize}}: f(x)$
-$\text{subject to} \quad c_i(x) = 0, i \in \mathcal{E}$
-​ $c_i(x) \geq 0, i \in \mathcal{J}$
-for Variables $x$, Objective Function $f(x)$ that satisfies $f: \mathbb{R}^n \rightarrow \mathbb{R}$, Constraints $\mathcal{E}, \mathcal{J}$ Here&amp;rsquo;s a quick example.
-Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain it is not well-defined. There is no solution to the following optimization as you can get infinitely close to 1, but there is always some $\delta$ that can be subtracted to get you even closer.</description>
+      <description>General Optimization \(\underset{x}{\text{minimize}}\: f(x)\) \(\text{subject to} \quad c_i(x) = 0, i \in \mathcal{E}\) ​ \(c_i(x) \geq 0, i \in \mathcal{J}\)
+for Variables \(x\), Objective Function \(f(x)\) that satisfies \(f: \mathbb{R}^n \rightarrow \mathbb{R}\), Constraints \(\mathcal{E}, \mathcal{J}\) Here&amp;rsquo;s a quick example.
+Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain it is not well-defined. There is no solution to the following optimization as you can get infinitely close to 1, but there is always some \(\delta\) that can be subtracted to get you even closer.</description>
     </item>
     
   </channel>
