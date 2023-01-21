@@ -15,3 +15,11 @@ weight: -20
 6. Hip up, pull head, squeeze :sleeping:
 
 #### From Mount
+
+### Americana (from side control)
+
+1. Take arm out from under head
+2. Pin opponent's hand to mat with that arm, use head and shoulders for leverage
+3. Bring elbow to neck
+4. Get other arm under and connect wrists
+5. Pull tight towards body and tilt their elbow up, using the wrists as the turning point (keep wrists on mat)

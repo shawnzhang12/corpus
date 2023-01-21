@@ -90,11 +90,41 @@ How is meaning created by use of words and phrases?
 1. It's time to bake.
 2. It's time to get baked.
 
-miscellaneous ambiguity: news headlines
+> #### Pragmatics Resolution :arrow_heading_down:
+>
+> :question: No one woman is so popular right? Yeah there isn't.
+>
+> :a: Every man loves a woman.
+>
+> :question:What type of food did you make for her?
+>
+> :a: I cooked waterfowl meat for her to eat.
+>
+> :question:Are we in Canada? Yes.
+>
+> :a: It's time to get baked.
 
-nlp: resolve ambiguity, reason with world knowledge, tend to use probability, turing test
+## General NLP
 
-Chatbots: ELIZA pattern matching
+Involves **resolving ambiguity** at all levels, reasoning with world knowledge (used to be explicitly encoded in symbolic systems by experts), and tend to use **probabilities**.
+
+### Machine Translation
+
+Interpretation and generation.
+
+#### Word-to-word translation?
+
+There is disparity of meanings between languages. What defines a nation?Semantic and syntactic ambiguities: 
+
+"The spirit is willing, but the flesh is weak"
+
+$\rightarrow$ Russian $\rightarrow$ English $\rightarrow$ 
+
+"The vodka is good, but the meat is rotten"
+
+#### Solution: Statistical Machine Translation
+
+Learn statistics on parallel texts.
 
 
 

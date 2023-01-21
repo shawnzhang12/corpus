@@ -65,7 +65,7 @@ Notice we don’t use strictly greater than. Why? In a continuous domain it is n
       "url" : "/Courses/Optimization-in-Machine-Learning/2.-Optimization/",
       "headline": "2. Optimization",
       "description": "General Optimization \\(\\underset{x}{\\text{minimize}}\\: f(x)\\) \\(\\text{subject to} \\quad c_i(x) = 0, i \\in \\mathcal{E}\\) ​ \\(c_i(x) \\geq 0, i \\in \\mathcal{J}\\)\nfor Variables \\(x\\), Objective Function \\(f(x)\\) that satisfies \\(f: \\mathbb{R}^n \\rightarrow \\mathbb{R}\\), Constraints \\(\\mathcal{E}, \\mathcal{J}\\) Here’s a quick example.\nNotice we don’t use strictly greater than. Why? In a continuous domain it is not well-defined. There is no solution to the following optimization as you can get infinitely close to 1, but there is always some \\(\\delta\\) that can be subtracted to get you even closer.",
-      "wordCount" : "284",
+      "wordCount" : "372",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -442,6 +442,42 @@ Notice we don’t use strictly greater than. Why? In a continuous domain it is n
                     class="gdoc-nav__entry"
                   >
                     Sweeps
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/BJJGrappling/Takedowns/"
+                    class="gdoc-nav__entry"
+                  >
+                    Takedowns
                   </a>
                 </span>
               
@@ -1384,9 +1420,44 @@ Notice we don’t use strictly greater than. Why? In a continuous domain it is n
 <span class="gdoc-katex ">
   \(\frac{dy}{dx} = \frac{d^2y}{dx^2} = 0\)</span>.</p>
 <div class="gdoc-page__anchorwrap">
-    <h1 id="lecture-3-part-2-here">
-        Lecture 3 part 2 here
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/2.-Optimization/#lecture-3-part-2-here" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Lecture 3 part 2 here" aria-label="Anchor to: Lecture 3 part 2 here" href="#lecture-3-part-2-here">
+    <h2 id="conditions-for-local-optimality">
+        Conditions for Local Optimality
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/2.-Optimization/#conditions-for-local-optimality" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Conditions for Local Optimality" aria-label="Anchor to: Conditions for Local Optimality" href="#conditions-for-local-optimality">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<ol>
+<li>$f&rsquo;(x^*) = 0$, the first-order necessary condition (FONC)</li>
+<li>$f&rsquo;&rsquo;(x^{**}) \geq 0$, the second-order necessary condition (SONC)</li>
+</ol>
+<p>Note: Not all points with zero derivative and a zero second derivative are local minima, such an inflection point.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="how-did-we-get-the-necessary-conditions">
+        How did we get the necessary conditions?
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/2.-Optimization/#how-did-we-get-the-necessary-conditions" class="gdoc-page__anchor clip flex align-center" title="Anchor to: How did we get the necessary conditions?" aria-label="Anchor to: How did we get the necessary conditions?" href="#how-did-we-get-the-necessary-conditions">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>A <em>Taylor approximation</em> that uses only the <u>first two terms</u> of the Taylor expansion.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="proof-of-the-fonc">
+        Proof of the FONC
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/2.-Optimization/#proof-of-the-fonc" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Proof of the FONC" aria-label="Anchor to: Proof of the FONC" href="#proof-of-the-fonc">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p><strong>Theorem:</strong> if $x^<em>$ is a local minimizer and f is continuously differentiable around $x^</em>$, then $f&rsquo;(x^*) = 0$.</p>
+<blockquote>
+<p><strong>Proof</strong></p>
+<p>Put the proof here</p>
+</blockquote>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="continue-with-bisection-algorithm-and-runtimes">
+        Continue with Bisection Algorithm and runtimes.
+        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/2.-Optimization/#continue-with-bisection-algorithm-and-runtimes" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Continue with Bisection Algorithm and runtimes." aria-label="Anchor to: Continue with Bisection Algorithm and runtimes." href="#continue-with-bisection-algorithm-and-runtimes">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
