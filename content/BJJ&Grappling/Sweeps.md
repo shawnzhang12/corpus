@@ -3,7 +3,7 @@ title: "Sweeps"
 weight: -20
 ---
 
-## Closed Guard {{< katex >}}\rightarrow{{< /katex >}} Mount
+## Closed Guard to Mount
 
 ### Hip Bump
 

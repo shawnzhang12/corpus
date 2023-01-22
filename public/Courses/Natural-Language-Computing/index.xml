@@ -6,20 +6,16 @@
     <description>Recent content in Natural Language Computing on Shawn&#39;s Docs</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/Courses/Natural-Language-Computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2. Corpora, Language Models, Smoothing</title>
-      <link>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</link>
+      <title>1. Corpora, Language Models, Smoothing</title>
+      <link>/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</guid>
-      <description>Maximum Likelihood Estimate eueu
-Perplexity Equation here.
-Minimizing perplexity \(\equiv\) maximizing probability of corpus
-Uniform corpus distribution = max perplexity
-Lower perplexity \(\rightarrow\) Better Model
-trigram has lowest perplexity compared to bigram
-Zipf and the Natural Distributions in Language Sparseness Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.
-Patterns of Unigrams A few words occur very frequently.
-Frequency of frequencies:</description>
+      <guid>/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/</guid>
+      <description>What are we counting? Tokens and types. Instances of words and kinds of words.
+Corpora: A body of language data. Most useful when occurring naturally. Be aware of bias.
+Vocabulary: Set of unique Words
+Size of corpus: Total number of words
+Word Order Matters! Should consider past words, but not ALL past words. \(P(car|the\:old) = 0\) may never appear in the corpus, but \(P(old|the) &amp;gt; 0\) and \(P(car|old) &amp;gt; 0\) could be true, \(\therefore P(the\:old\:car) &amp;gt; 0\).</description>
     </item>
     
   </channel>

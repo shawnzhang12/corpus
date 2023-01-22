@@ -77,7 +77,7 @@ How are words and phrases used to produce meaning?" />
       "headline": "Natural Language Computing",
       "description": "Introduction and Motivation How can we get computers to understand what we say and write? Applications include text classification, language translation, speech recognition, natural language understanding, information retrieval,interpretability and Large Language Models.\nThe ultimate human-computer interaction. (Until brain chips become a thing.)\nSome question to think about.\nHow are sounds are text related?\nHow are words combined to make sentences?\nHow are words and phrases used to produce meaning?",
       "thumbnailUrl": "/Courses/Natural-Language-Computing/NLP_cover_hu573b5023392bd29dc27ab27257f4df87_488339_1200x630_fill_q75_box_smart1.jpg",
-      "wordCount" : "800",
+      "wordCount" : "555",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -821,10 +821,10 @@ How are words and phrases used to produce meaning?" />
               
                 <span class="flex">
                   <a
-                    href="/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/"
+                    href="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/"
                     class="gdoc-nav__entry"
                   >
-                    2. Corpora, Language Models, Smoothing
+                    1. Corpora, Language Models, Smoothing
                   </a>
                 </span>
               
@@ -1549,7 +1549,22 @@ How are words and phrases used to produce meaning?" />
 </div>
 <p>There is disparity of meanings between languages. What defines a nation?Semantic and syntactic ambiguities:</p>
 <p>&ldquo;The spirit is willing, but the flesh is weak&rdquo;</p>
-<p>$\rightarrow$ Russian $\rightarrow$ English $\rightarrow$</p>
+<p>
+
+
+
+<span class="gdoc-katex ">
+  \(\rightarrow\)</span> Russian 
+
+
+
+<span class="gdoc-katex ">
+  \(\rightarrow\)</span> English 
+
+
+
+<span class="gdoc-katex ">
+  \(\rightarrow\)</span></p>
 <p>&ldquo;The vodka is good, but the meat is rotten&rdquo;</p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="solution-statistical-machine-translation">
@@ -1559,39 +1574,7 @@ How are words and phrases used to produce meaning?" />
         </a>
     </h4>
 </div>
-<p>Learn statistics on parallel texts.</p>
-<p>applications:</p>
-<p>machine translation: interpretation and generation, word-to-word was popular, syntactic ambiguities, definitions, solution use statistical machine translation</p>
-<p>waveforms and spectrograms, speech recognition</p>
-<p>Lecture 2: Corpora, Language Models and Smoothing</p>
-<p>What are we counting, how do we count thing?</p>
-<p>Corpora: A body of language data (not the same as vocabulary), useful when occurs naturally, could be domain specific (medical, law) so watch out for bias</p>
-<p>vocab: unique words</p>
-<p>size of corpus: total number of words</p>
-<p>word order is dependent! need sequence models</p>
-<p>P(car|the old) = 0 if it never appears in past,</p>
-<p>solution: condition on a fixed number of words, check the sequences &rsquo;the old&rsquo; and &lsquo;old car&rsquo; probably both &gt; 0</p>
-<p>Word prediction: P(w|w_t-1)</p>
-<p>N-grams: token sequences of length N, pros: cheap to train, good baseline</p>
-<p>language model: probabilities of words in an ordered sequence P(w1, w2, w3, &hellip;)</p>
-<p>Term Count (count): term w in corpus C</p>
-<p>relative frequency (Fc): relative to the total number of tokens</p>
-<p>probabilistic chain rule</p>
-<p>
-
-
-
-<span class="gdoc-katex ">
-  \[P(A,B,C,D)=P(A)P(B|A)P(C|A,B)P(D|A,B,C)\]</span>
-simple prediction: approximate conditional probabilities ex. P(food| I like chinese) = P(I like chinese food)/P(I like chinese)</p>
-<p>problem with chain rule: infinitely long sequences, division by 0, so assume stattistical independence and recent history (markov assumption of previous n grams) bi grams look at one word past</p>
-<p>bi gram probabilities P(want|I) = Count (I want)/Count(I)</p>
-<p>Evaluation of language models</p>
-<p>Shannon&rsquo;s method</p>
-<p>shoot darts at board, bigram once hit, another dart board</p>
-<p>Shakespeare as a corpus, quadrigrams, increasing context,</p>
-<p>Extrinsic: external measure (task or application), sentiment analysis</p>
-<p>Intrinsic: complexity, other stuff</p>
+<p>Learn statistics on parallel texts. Speech Translation, Spectrograms  for another lecture.</p>
 
   </article>
 

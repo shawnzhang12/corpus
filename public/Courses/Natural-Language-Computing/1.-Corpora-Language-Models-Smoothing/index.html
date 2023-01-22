@@ -12,11 +12,13 @@
 <meta name="generator" content="Hugo 0.108.0">
 
 
-  <meta name="description" content="Introduction and Motivation Humans learn to design algorithms.
-Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.
-&ldquo;[&hellip;] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.&rdquo; - Birge, J." />
+  <meta name="description" content="What are we counting? Tokens and types. Instances of words and kinds of words.
+Corpora: A body of language data. Most useful when occurring naturally. Be aware of bias.
+Vocabulary: Set of unique Words
+Size of corpus: Total number of words
+Word Order Matters! Should consider past words, but not ALL past words. \(P(car|the\:old) = 0\) may never appear in the corpus, but \(P(old|the) &gt; 0\) and \(P(car|old) &gt; 0\) could be true, \(\therefore P(the\:old\:car) &gt; 0\)." />
 
-    <title>Optimization in ML | Shawn&#39;s Docs</title>
+    <title>1. Corpora, Language Models, Smoothing | Shawn&#39;s Docs</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -37,23 +39,27 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
     
   <meta
     property="og:title"
-    content="Optimization in ML"
+    content="1. Corpora, Language Models, Smoothing"
   />
   <meta property="og:site_name" content="Shawn's Docs" />
-  <meta property="og:description" content="Introduction and Motivation Humans learn to design algorithms.
-Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.
-“[…] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.” - Birge, J." />
+  <meta property="og:description" content="What are we counting? Tokens and types. Instances of words and kinds of words.
+Corpora: A body of language data. Most useful when occurring naturally. Be aware of bias.
+Vocabulary: Set of unique Words
+Size of corpus: Total number of words
+Word Order Matters! Should consider past words, but not ALL past words. \(P(car|the\:old) = 0\) may never appear in the corpus, but \(P(old|the) &gt; 0\) and \(P(car|old) &gt; 0\) could be true, \(\therefore P(the\:old\:car) &gt; 0\)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/Courses/Optimization-in-Machine-Learning/" />
+<meta property="og:url" content="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/" />
 
 <meta property="article:section" content="Courses" />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Optimization in ML" />
-  <meta name="twitter:description" content="Introduction and Motivation Humans learn to design algorithms.
-Can algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.
-“[…] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.” - Birge, J." />
+<meta name="twitter:title" content="1. Corpora, Language Models, Smoothing" />
+  <meta name="twitter:description" content="What are we counting? Tokens and types. Instances of words and kinds of words.
+Corpora: A body of language data. Most useful when occurring naturally. Be aware of bias.
+Vocabulary: Set of unique Words
+Size of corpus: Total number of words
+Word Order Matters! Should consider past words, but not ALL past words. \(P(car|the\:old) = 0\) may never appear in the corpus, but \(P(old|the) &gt; 0\) and \(P(car|old) &gt; 0\) could be true, \(\therefore P(the\:old\:car) &gt; 0\)." />
 
 
   <script type="application/ld+json">
@@ -61,16 +67,16 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Courses",
-      "name": "Optimization in ML",
-      "url" : "/Courses/Optimization-in-Machine-Learning/",
-      "headline": "Optimization in ML",
-      "description": "Introduction and Motivation Humans learn to design algorithms.\nCan algorithms learn to design algorithms? This is the domain of machine learning and discrete optimization. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.\n“[…] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.” - Birge, J.",
-      "wordCount" : "529",
+      "name": "1. Corpora, Language Models, Smoothing",
+      "url" : "/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/",
+      "headline": "1. Corpora, Language Models, Smoothing",
+      "description": "What are we counting? Tokens and types. Instances of words and kinds of words.\nCorpora: A body of language data. Most useful when occurring naturally. Be aware of bias.\nVocabulary: Set of unique Words\nSize of corpus: Total number of words\nWord Order Matters! Should consider past words, but not ALL past words. \\(P(car|the\\:old) = 0\\) may never appear in the corpus, but \\(P(old|the) \u003e 0\\) and \\(P(car|old) \u003e 0\\) could be true, \\(\\therefore P(the\\:old\\:car) \u003e 0\\).",
+      "wordCount" : "561",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "/Courses/Optimization-in-Machine-Learning/"
+          "@id": "/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/"
       },
       "copyrightHolder" : "Shawn\u0027s Docs",
       "copyrightYear" : "0001",
@@ -154,7 +160,7 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
   href="/custom.css"
   media="all"
 />
-  <link href="/Courses/Optimization-in-Machine-Learning/" rel="canonical" type="text/html" />
+  <link href="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -810,7 +816,7 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
                 <span class="flex">
                   <a
                     href="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     1. Corpora, Language Models, Smoothing
                   </a>
@@ -853,7 +859,7 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
                 <span class="flex">
                   <a
                     href="/Courses/Optimization-in-Machine-Learning/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     Optimization in ML
                   </a>
@@ -1281,7 +1287,15 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Shawn's Docs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Courses/' href='/Courses/'><span itemprop='name'>Courses</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Optimization in ML</span><meta itemprop='position' content='3' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Shawn's Docs</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Courses/' href='/Courses/'><span itemprop='name'>Courses</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Courses/Natural-Language-Computing/' href='/Courses/Natural-Language-Computing/'><span itemprop='name'>Natural Language Computing</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>1. Corpora, Language Models, Smoothing</span><meta itemprop='position' content='4' /></li>
+  
+
   
 
   
@@ -1299,241 +1313,497 @@ Can algorithms learn to design algorithms? This is the domain of machine learnin
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Optimization in ML</h1>
-    <p><img
-  src="opt_background.png"
-  alt=""
-  
-/></p>
+    <h1>1. Corpora, Language Models, Smoothing</h1>
+    <p>What are we counting? Tokens and types. Instances of words and kinds of words.</p>
+<p><strong>Corpora:</strong> A body of language data. Most useful when occurring naturally. Be aware of bias.</p>
+<p><strong>Vocabulary</strong>: Set of unique Words</p>
+<p><strong>Size of corpus</strong>: Total number of words</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="introduction-and-motivation">
-        Introduction and Motivation
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#introduction-and-motivation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Introduction and Motivation" aria-label="Anchor to: Introduction and Motivation" href="#introduction-and-motivation">
+    <h3 id="word-order-matters">
+        Word Order Matters!
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#word-order-matters" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Word Order Matters!" aria-label="Anchor to: Word Order Matters!" href="#word-order-matters">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h2>
+    </h3>
 </div>
-<p>Humans learn to design algorithms.</p>
-<p>Can algorithms <em>learn</em> to design algorithms? This is the domain of <u>machine learning</u> and <u>discrete optimization</u>. Some applications include: data center management, energy systems, scientific discovery, ridesharing, scheduling, disaster response, college admissions, and so on.</p>
-<blockquote>
-<p>&ldquo;[&hellip;] the overall value of linear optimization to the economy probably surpasses 5% overall or more than $1 trillion each year in the United States alone.&rdquo; <br/>- Birge, J. R. (2022)</p>
-</blockquote>
+<p>Should consider past words, but not ALL past words. 
 
-
-
-
-
-<blockquote class="gdoc-hint note">
-  <div class="gdoc-hint__title flex align-center"><svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-      <span>Data Center Resource Management Example</span></div>
-  <div class="gdoc-hint__text"><link
+  
+  <link
     rel="stylesheet"
     href="/katex-6c55f6d5.min.css"
   />
   <script defer src="/js/katex-260824b9.bundle.min.js"></script>
-<span class="gdoc-katex ">
-  \(\)</span>
-Given Services 
-<span class="gdoc-katex ">
-  \(S\)</span> with varying CPU and Memory demands and Machines 
-<span class="gdoc-katex ">
-  \(M\)</span>, how would you design a job scheduler?
-<p>Each machine has multiple processors, so ideally we would want the minimum number of machines active while servicing all the jobs. Each service is on one machine only, and machine is &ldquo;ON&rdquo; if a job is assigned to it. Machines should have enough memory and CPU capacity to run all the services. With our variables, metrics, and constraints defined; we now have an optimization problem. Rewriting in mathematical notation:</div>
-</blockquote>
-
-<div class="table-wrap"> <table>
-<thead>
-<tr>
-<th>Variables</th>
-<th>Metrics</th>
-<th>Constraints</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
+  
 
 
 
 <span class="gdoc-katex ">
-  \(y_m = 1\)</span> if machine <b><i>m</i></b> is used <br />
+  \(P(car|the\:old) = 0\)</span> may never appear in the corpus, but 
 
 
 
 <span class="gdoc-katex ">
-  \(x_{s,m} = 1\)</span> if service <b><i>s</i></b> runs on <b><i>m</i></b> <br /> 
+  \(P(old|the) &gt; 0\)</span> and 
 
 
 
 <span class="gdoc-katex ">
-  \(x \in \{0,1\}^{S \times M}, y \in \{0,1\}^M\)</span></td>
-<td><strong>minimize</strong> 
+  \(P(car|old) &gt; 0\)</span> could be true, 
 
 
 
 <span class="gdoc-katex ">
-  \(\sum_{m=1}^{M} y_m\)</span></td>
-<td>
-
-
-
-<span class="gdoc-katex ">
-  \(\sum_{m=1}^M x_{s,m} =1 \: \forall s\)</span><br/>
-
-
-
-<span class="gdoc-katex ">
-  \(y_m \geq x_{s,m} \: \forall s,m\)</span><br/>
-
-
-
-<span class="gdoc-katex ">
-  \(\sum_{s=1}^S \mathbf{mem}(s) \cdot x_{s,m} \leq \mathbf{MEMCAP}(m) \: \forall m\)</span><br/>
-
-
-
-<span class="gdoc-katex ">
-  \(\sum_{s=1}^S \mathbf{cpu}(s) \cdot x_{s,m} \leq \mathbf{CPUCAP}(m) \: \forall m \)</span></td>
-</tr>
-</tbody>
-</table> </div>
+  \(\therefore P(the\:old\:car) &gt; 0\)</span>.</p>
 <div class="gdoc-page__anchorwrap">
-    <h4 id="artificial-intelligence">
-        Artificial Intelligence
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#artificial-intelligence" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Artificial Intelligence" aria-label="Anchor to: Artificial Intelligence" href="#artificial-intelligence">
+    <h4 id="solution-word-prediction-with-n-gram-models">
+        Solution: Word prediction with N-gram Models
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#solution-word-prediction-with-n-gram-models" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Solution: Word prediction with N-gram Models" aria-label="Anchor to: Solution: Word prediction with N-gram Models" href="#solution-word-prediction-with-n-gram-models">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div>
-<p>Performs <strong>non-trivial tasks</strong> as well as or better than humans. Many sub-goals including Perception, Reasoning, Control, and Planning.</p>
-<p>E.g. <u>Speech Recognition:</u> Perception + Reasoning</p>
-<p><u>Autonomous Driving:</u> Perception + Reasoning + Control + Planning</p>
-<p><u>Game Playing:</u> Reasoning + Planning</p>
-<div class="gdoc-page__anchorwrap">
-    <h4 id="knowledge-based-ai">
-        Knowledge-Based AI
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#knowledge-based-ai" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Knowledge-Based AI" aria-label="Anchor to: Knowledge-Based AI" href="#knowledge-based-ai">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div>
-<p>Knowledge is represented via logic. We have a knowledge base (set of formulae) and models where all these facts hold. Easy to interpret.</p>
-<p>Fundamental Limitations: cannot perform better than human, requires domain knowledge, some things we can&rsquo;t explain to a computer (riding a bicycle)</p>
-<div class="gdoc-page__anchorwrap">
-    <h4 id="data-based-ai--machine-learning">
-        Data-Based AI = Machine Learning
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#data-based-ai--machine-learning" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Data-Based AI = Machine Learning" aria-label="Anchor to: Data-Based AI = Machine Learning" href="#data-based-ai--machine-learning">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div>
-<p>Pros: Don&rsquo;t need to learn from humans, performance improves with more examples</p>
-<p>Cons: Hard to interpret, may need <strong>many</strong> examples</p>
-<blockquote>
-<p><u>Machine Learning</u></p>
-<p>Study of algorithms that</p>
-<ul>
-<li>improve their <u>performance</u> P (Optimization)</li>
-<li>at some <u>task</u> T (Classification, Regression, Clustering)</li>
-<li>with <u>experience</u> E (Images, Text, Numbers)</li>
-</ul>
-<p>well-defined learning task: &lt;P,T,E&gt;</p>
-</blockquote>
-<div class="gdoc-page__anchorwrap">
-    <h4 id="supervised-learning">
-        Supervised Learning
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#supervised-learning" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Supervised Learning" aria-label="Anchor to: Supervised Learning" href="#supervised-learning">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div>
-<p>With sufficient amount of &ldquo;similar&rdquo; data and an expressive model class, minimizing the loss function on the training data should yield an <strong>accurate model</strong> on <strong>unseen test data</strong>.</p>
-<div class="gdoc-page__anchorwrap">
-    <h5 id="classification-elements">
-        Classification Elements
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#classification-elements" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Classification Elements" aria-label="Anchor to: Classification Elements" href="#classification-elements">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h5>
-</div>
-<ol>
-<li>Data, Model, Loss</li>
-</ol>
-<p>Decision Tree predict <strong>discrete</strong> outcomes, LR predicts <strong>probabilities</strong> of outcomes.</p>
-<div class="gdoc-page__anchorwrap">
-    <h5 id="decision-trees">
-        Decision Trees
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#decision-trees" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Decision Trees" aria-label="Anchor to: Decision Trees" href="#decision-trees">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h5>
-</div>
-<ol>
-<li>Find <strong>best attribute</strong> to split on (e.g. humidity level)</li>
-<li>Find <strong>best split</strong> on chosen attribute (e.g. &lt;&gt; 80%)</li>
-<li>Repeat 1 &amp; 2 until <strong>stopping criterion</strong> is met (very few data points; node is pure(most training data in node have same label))</li>
-</ol>
-<div class="gdoc-page__anchorwrap">
-    <h5 id="logistic-regression-lr">
-        Logistic Regression (LR)
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#logistic-regression-lr" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Logistic Regression (LR)" aria-label="Anchor to: Logistic Regression (LR)" href="#logistic-regression-lr">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h5>
-</div>
-<p>Parameters: 
+<p><strong>Language Models:</strong> The statistical model of a language. Probability of words in an <em>ordered</em> sequence. i.e., 
 
 
 
 <span class="gdoc-katex ">
-  \(\beta_0, \beta_1, ..., \beta_d\)</span></p>
-<p>Model: 
+  \(P(w_1, w_2, ..., w_n)\)</span>.</p>
+<p><strong>N-grams:</strong> token sequences of length N</p>
+<p>Given probabilities of N-grams, we can compute the conditional probabilities of possible subsequent words. Estimate 
 
 
 
 <span class="gdoc-katex ">
-  \[p(x;\beta) = \frac{1}{1 &#43; e^{-(\beta_0 &#43; \beta_1 x_1 &#43; ... &#43; \beta_d x_d)}}\]</span></p>
-<p>Data: 
+  \(P(w_t|w_{t-1})\)</span> from count of 
 
 
 
 <span class="gdoc-katex ">
-  \(S = {(x_i, y_i)}_{i=1,...,n}\)</span> , 
+  \((w_{t-1}, w_t)\)</span> in corpus.</p>
+<p>Example: &rsquo;the last word in this sentence is ___&rsquo;. What is the next word? Suppose we know,</p>
 
-
-
-<span class="gdoc-katex ">
-  \(x_i\)</span>: example with d attributes, 
 
 
 
 <span class="gdoc-katex ">
-  \(y_i\)</span>: label</p>
-<p>Optimization: Use Maximum likelihood Estimation (MLE) to find parameters 
+  \[P(is\:the) &gt; P(is\:a) \therefore P(the|is) &gt; P(a|is)\]</span>
+<p>Then we would predict &rsquo;the last word in this sentence is <strong>the</strong>'.</p>
+<p><strong>Term count (Count):</strong> the number of tokens of term 
 
 
 
 <span class="gdoc-katex ">
-  \(\beta^*\)</span> that maximizes the likelihood: 
+  \(w\)</span> in 
 
 
 
 <span class="gdoc-katex ">
-  \[\prod_{i=1}^{n} p(x_i;\beta)^{y_i} \times (1 - p(x_i;\beta))^{1-y_i}\]</span></p>
+  \(C\)</span></p>
+<p><strong>Relative frequency (
+
+
+
+<span class="gdoc-katex ">
+  \(F_C\)</span>):</strong> relative to total number of tokens, basically the fraction of 
+
+
+
+<span class="gdoc-katex ">
+  \(\frac{count}{total\:count}\)</span>.</p>
+<p><strong>Probabilistic Chain Rule:</strong> 
+
+
+
+<span class="gdoc-katex ">
+  \[P(A,B,C,D)=P(A)P(B|A)P(C|A,B)P(D|A,B,C)\]</span></p>
+<p>But there are <em>many</em> possible solutions, how do we avoid 0 probabilities? We can make a Markov assumption, that only a short linear history of length L is sufficient for word prediction.</p>
+<p><strong>Bigram</strong> version: 
+
+
+
+<span class="gdoc-katex ">
+  \[P(w_n|w_{1:(n-1)}) \approx P(w_n|w_{n-1})\]</span></p>
 <div class="gdoc-page__anchorwrap">
-    <h5 id="support-vector-machines-svm">
-        Support Vector Machines (SVM)
-        <a data-clipboard-text="/Courses/Optimization-in-Machine-Learning/#support-vector-machines-svm" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Support Vector Machines (SVM)" aria-label="Anchor to: Support Vector Machines (SVM)" href="#support-vector-machines-svm">
+    <h3 id="bigram--counts-and-probabilities">
+        Bigram  Counts and Probabilities
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#bigram--counts-and-probabilities" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Bigram  Counts and Probabilities" aria-label="Anchor to: Bigram  Counts and Probabilities" href="#bigram--counts-and-probabilities">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h5>
+    </h3>
 </div>
-<p>I love them. Uses the <strong>Maximum-Margin</strong> Principle so that its robust to outliers.</p>
 <p><img
-  src="svm.png"
+  src="bigram_counts.png"
   alt=""
   
 /></p>
+<p>To get likelihoods, we can dividing bigram counts by unigram counts.</p>
+<p><img
+  src="bigram_probabilities.png"
+  alt=""
+  
+/></p>
+<p>Now we can estimate the probability of <strong>whole sentences</strong> by adding the start (&lt;s&gt;) and end (&lt;/s&gt;) tags.</p>
+
+
+
+
+<span class="gdoc-katex ">
+  \[P(&lt;s&gt; I\:want\:english\:food&lt;/s&gt;) \approx\]</span>
+
+
+
+
+<span class="gdoc-katex ">
+  \[P(I|&lt;s&gt;)P(want|I)P(english|want)P(food|english)P(&lt;/s&gt;|food) \approx 0.000031\]</span>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="are-n-grams-still-relevant">
+        Are N-grams still relevant?
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#are-n-grams-still-relevant" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Are N-grams still relevant?" aria-label="Anchor to: Are N-grams still relevant?" href="#are-n-grams-still-relevant">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Often cheaper to train/query than neural LMs. Can be interpolated with neural LMs to often achieve SOTA performance. <em>Occasionally</em> outperform neural LMs. Interpretable and convenient.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="evaluation-of-language-models">
+        Evaluation of Language Models
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#evaluation-of-language-models" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Evaluation of Language Models" aria-label="Anchor to: Evaluation of Language Models" href="#evaluation-of-language-models">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="shannons-method">
+        Shannon&rsquo;s method
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#shannons-method" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Shannon&rsquo;s method" aria-label="Anchor to: Shannon&rsquo;s method" href="#shannons-method">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Sample based on context. RNG those darts. In general, Quadrigrams &gt; Trigrams &gt; Bigrams &gt; Unigrams for appearing more similar to actual texts like Shakespeare. This is because for increasing context, there are fewer possible next words. E.g. 
+
+
+
+<span class="gdoc-katex ">
+  \(P(Gloucester|seek\:the\:traitor) = 1\)</span>.</p>
+<p><img
+  src="shannon.png"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="goodness-of-a-model">
+        Goodness of a Model?
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#goodness-of-a-model" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Goodness of a Model?" aria-label="Anchor to: Goodness of a Model?" href="#goodness-of-a-model">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="extrinsic-evaluation">
+        Extrinsic Evaluation
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#extrinsic-evaluation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Extrinsic Evaluation" aria-label="Anchor to: Extrinsic Evaluation" href="#extrinsic-evaluation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Utility of a language model is often determined <em>in situ</em> (in practice). Take two different LMs and compare them, such as for speech recognition.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="intrinsic-evaluation">
+        Intrinsic Evaluation
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#intrinsic-evaluation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Intrinsic Evaluation" aria-label="Anchor to: Intrinsic Evaluation" href="#intrinsic-evaluation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Estimate the probability of a corpus 
+
+
+
+<span class="gdoc-katex ">
+  \(P(C)\)</span>.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="maximum-likelihood-estimate">
+        Maximum Likelihood Estimate
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#maximum-likelihood-estimate" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Maximum Likelihood Estimate" aria-label="Anchor to: Maximum Likelihood Estimate" href="#maximum-likelihood-estimate">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>
+
+
+
+<span class="gdoc-katex ">
+  \(\theta^* = \text{argmax}_{\theta}L_M(\theta | T), L_M(\theta|T) = P_{M(\theta)}(T)\)</span>, where T is the Brown corpus, M is the bigram and unigram tables, and parameters 
+
+
+
+<span class="gdoc-katex ">
+  \(\theta_{to|want} \:\text{is}\: P(to|want)\)</span>.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="perplexity">
+        Perplexity
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#perplexity" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Perplexity" aria-label="Anchor to: Perplexity" href="#perplexity">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Sort of like a &lsquo;branching factor&rsquo;, 
+
+
+
+<span class="gdoc-katex ">
+  \(PP(C) = 2^{-(\frac{log_2P(C)}{||C||})} = P(C)^{-1/||C||}\)</span></p>
+<p>Minimizing perplexity 
+
+
+
+<span class="gdoc-katex ">
+  \(\equiv\)</span> Maximizing probability of corpus.</p>
+<p><strong>Max perplexity</strong>: Uniform corpus distribution</p>
+<p><strong>Lower</strong> perplexity 
+
+
+
+<span class="gdoc-katex ">
+  \(\rightarrow\)</span> <strong>Better</strong> Model. Trigram has lowest perplexity compared to bigram.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="zipf-and-the-natural-distributions-in-language">
+        Zipf and the Natural Distributions in Language
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#zipf-and-the-natural-distributions-in-language" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Zipf and the Natural Distributions in Language" aria-label="Anchor to: Zipf and the Natural Distributions in Language" href="#zipf-and-the-natural-distributions-in-language">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="sparseness">
+        Sparseness
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#sparseness" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Sparseness" aria-label="Anchor to: Sparseness" href="#sparseness">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>Longer n-grams will result in more sparsity. Will result in probabilities of 0 when you do multiplications.</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="patterns-of-unigrams">
+        Patterns of Unigrams
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#patterns-of-unigrams" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Patterns of Unigrams" aria-label="Anchor to: Patterns of Unigrams" href="#patterns-of-unigrams">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>A few words occur <strong>very frequently</strong>.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="frequency-of-frequencies">
+        Frequency of frequencies
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#frequency-of-frequencies" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Frequency of frequencies" aria-label="Anchor to: Frequency of frequencies" href="#frequency-of-frequencies">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p><img
+  src="freqoffreq.png"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="word-rankings">
+        Word Rankings
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#word-rankings" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Word Rankings" aria-label="Anchor to: Word Rankings" href="#word-rankings">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p><img
+  src="wordrankings.png"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="zipfs-law">
+        Zipf&rsquo;s Law
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#zipfs-law" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Zipf&rsquo;s Law" aria-label="Anchor to: Zipf&rsquo;s Law" href="#zipfs-law">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p><u>We humans are Nlazy.</u></p>
+<p>Speaker minimizes effort by having a <strong>small</strong> vocabulary of <strong>common</strong> words.</p>
+<p>Hearer minimizes effort by having a <strong>large</strong> vocabulary of <strong>less ambiguous</strong> words.</p>
+<p>Compromise: frequency and rank are inversely proportional.</p>
+
+
+
+
+<span class="gdoc-katex ">
+  \[f \propto \frac{I}{r} \quad \text{i.e., for some k} \quad f \cdot r = k\]</span>
+<p>Zero prob in Shakespeare, some N-grams are just really rare</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="smoothing-mechanisms">
+        Smoothing mechanisms
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#smoothing-mechanisms" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Smoothing mechanisms" aria-label="Anchor to: Smoothing mechanisms" href="#smoothing-mechanisms">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="1-add-hahahugoshortcode-s24-hbhb-smoothing-laplace">
+        1. Add-
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> smoothing (Laplace)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#1-add-hahahugoshortcode-s24-hbhb-smoothing-laplace" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 1. Add-
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> smoothing (Laplace)" aria-label="Anchor to: 1. Add-
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> smoothing (Laplace)" href="#1-add-hahahugoshortcode-s24-hbhb-smoothing-laplace">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="laplace-smoothing-hahahugoshortcode-s25-hbhb--1">
+        Laplace Smoothing (
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> = 1)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#laplace-smoothing-hahahugoshortcode-s25-hbhb--1" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Laplace Smoothing (
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> = 1)" aria-label="Anchor to: Laplace Smoothing (
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> = 1)" href="#laplace-smoothing-hahahugoshortcode-s25-hbhb--1">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>+1 imaginary count to all words, no more zero counts!</p>
+<p>Laplace smoothing results in non-zero probabilities which is great, but now the rich n-grams have reduced probabilities. Inflation and taxes! Robinhood. Steal from the rich and give to the poor.</p>
+<p>E.g. 
+
+
+
+<span class="gdoc-katex ">
+  \(P(to|want)\)</span> went from 0.66 to 0.26 😞. That&rsquo;s a huge change!</p>
+<p>In <strong>extrinsic</strong> evaluations, the results are not great.</p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="generalized-laplace-hahahugoshortcode-s27-hbhb--1">
+        Generalized Laplace (
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> &lt; 1)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#generalized-laplace-hahahugoshortcode-s27-hbhb--1" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Generalized Laplace (
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> &lt; 1)" aria-label="Anchor to: Generalized Laplace (
+
+
+
+<span class="gdoc-katex ">
+  \(\delta\)</span> &lt; 1)" href="#generalized-laplace-hahahugoshortcode-s27-hbhb--1">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>Sometimes work empirically (e.g. text categorization), sometimes not.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="2-good-turing">
+        2. Good-Turing
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#2-good-turing" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 2. Good-Turing" aria-label="Anchor to: 2. Good-Turing" href="#2-good-turing">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p><strong>Idea</strong>: We still want to get rid of zeros. But now we want re-estimate counts of words using the MLE of words that occur count + 1 times. We look to our word neighbors in terms of frequency to make new estimates.</p>
+<p>What is the probability of seeing something <strong>new</strong> (
+
+
+
+<span class="gdoc-katex ">
+  \(N_0\)</span>)? Use the 
+
+
+
+<span class="gdoc-katex ">
+  \(N_1\)</span> counts as an estimate. If 
+
+
+
+<span class="gdoc-katex ">
+  \(N_{c&#43;1}\)</span> has a count of zero, we can use log-log linearly interpolation to guess.</p>
+<p><img
+  src="turing_example.png"
+  alt=""
+  
+/></p>
+<p><img
+  src="turing_adjustments.png"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="3-simple-interpolation">
+        3. Simple Interpolation
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#3-simple-interpolation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 3. Simple Interpolation" aria-label="Anchor to: 3. Simple Interpolation" href="#3-simple-interpolation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Combine trigram, bigram, and unigram probabilities.</p>
+<p><img
+  src="interp.png"
+  alt=""
+  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="4-absolute-discounting">
+        4. Absolute discounting
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#4-absolute-discounting" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 4. Absolute discounting" aria-label="Anchor to: 4. Absolute discounting" href="#4-absolute-discounting">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Instead of multiplying highest N-gram by a 
+
+
+
+<span class="gdoc-katex ">
+  \(\lambda_i\)</span>, we can just subtract a fixed discount 
+
+
+
+<span class="gdoc-katex ">
+  \(0 \leq \delta \leq 1\)</span> from each non-zero count. Both simple interpolation and absolute discounting redistribute probability mass, but for absolute discounting we have a similar trend observed when comparing counts of training set and held-out set.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="5-kneser-ney-smoothing-modified">
+        5. Kneser-Ney smoothing (Modified)
+        <a data-clipboard-text="/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/#5-kneser-ney-smoothing-modified" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 5. Kneser-Ney smoothing (Modified)" aria-label="Anchor to: 5. Kneser-Ney smoothing (Modified)" href="#5-kneser-ney-smoothing-modified">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Use different absolute discounts depending on n-gram count. Lots of math that won&rsquo;t be tested, but Modified Kneser-Ney is arguably the <strong>most popular choice</strong> for n-gram language modelling.</p>
 
   </article>
 

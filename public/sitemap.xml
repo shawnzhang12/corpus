@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/Courses/Natural-Language-Computing/1.-Corpora-Language-Models-Smoothing/</loc>
+  </url><url>
     <loc>/Courses/Distributed-Systems/1.-Distributed-Systems-Examples/</loc>
   </url><url>
     <loc>/Courses/Optimization-in-Machine-Learning/1.-Review-of-Linear-Algebra/</loc>
-  </url><url>
-    <loc>/Courses/Natural-Language-Computing/2.-Corpora-Language-Models-Smoothing/</loc>
   </url><url>
     <loc>/Courses/Optimization-in-Machine-Learning/2.-Optimization/</loc>
   </url><url>
