@@ -16,6 +16,12 @@ weight: -20
 2. Grab behind with one arm
 3. Also reposition with feet to get MAX hip torque
 
+hip throw arm on bicep
+
+hip throw arm on neck
+
+all similar
+
 {{< youtube KrMk6G38UaY >}}
 
 ### Scarf Hold (Kesa Gatame)
@@ -24,4 +30,18 @@ weight: -20
 - other arm constraint opponent wrist and shoulder
 - legs splayed, good to shuffle so doesn't get trapped
 - head close down and tight to opponent
+
+ESCAPE with hip thrust?
+
+transition to shove their arm in their face with your head hold
+
+ESCAPE with back roll
+
+
+
+grab their leg hold
+
+
+
+
 
