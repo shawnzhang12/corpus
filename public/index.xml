@@ -64,6 +64,18 @@ Notice we don&amp;rsquo;t use strictly greater than. Why? In a continuous domain
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Blind-75/Arrays/</guid>
+      <description>Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Solution The concept here is to have a dictionary that stores the current value and the key, and the index as the value.</description>
+    </item>
+    
+    <item>
+      <title>Arrays</title>
+      <link>/Blind-75/Graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Blind-75/Graphs/</guid>
       <description>Hi</description>
     </item>
     

@@ -12,7 +12,10 @@
 <meta name="generator" content="Hugo 0.108.0">
 
 
-  <meta name="description" content="Hi" />
+  <meta name="description" content="Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Solution The concept here is to have a dictionary that stores the current value and the key, and the index as the value." />
 
     <title>Arrays | Shawn&#39;s Docs</title>
 
@@ -38,7 +41,10 @@
     content="Arrays"
   />
   <meta property="og:site_name" content="Shawn's Docs" />
-  <meta property="og:description" content="Hi" />
+  <meta property="og:description" content="Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Solution The concept here is to have a dictionary that stores the current value and the key, and the index as the value." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Blind-75/Arrays/" />
 
@@ -47,7 +53,10 @@
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Arrays" />
-  <meta name="twitter:description" content="Hi" />
+  <meta name="twitter:description" content="Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Solution The concept here is to have a dictionary that stores the current value and the key, and the index as the value." />
 
 
   <script type="application/ld+json">
@@ -58,8 +67,8 @@
       "name": "Arrays",
       "url" : "/Blind-75/Arrays/",
       "headline": "Arrays",
-      "description": "Hi",
-      "wordCount" : "1",
+      "description": "Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have *exactly* one solution, and you may not use the same element twice.\nYou can return the answer in any order.\nSolution The concept here is to have a dictionary that stores the current value and the key, and the index as the value.",
+      "wordCount" : "164",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -596,6 +605,42 @@
                   <a
                     href="/Blind-75/Arrays/"
                     class="gdoc-nav__entry is-active"
+                  >
+                    Arrays
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="/Blind-75/Graphs/"
+                    class="gdoc-nav__entry"
                   >
                     Arrays
                   </a>
@@ -1420,8 +1465,46 @@
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Arrays</h1>
-    <p>Hi</p>
-
+    <div class="gdoc-page__anchorwrap">
+    <h3 id="two-sum--">
+        Two Sum  📗
+        <a data-clipboard-text="/Blind-75/Arrays/#two-sum--" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Two Sum  📗" aria-label="Anchor to: Two Sum  📗" href="#two-sum--">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="problem">
+        Problem
+        <a data-clipboard-text="/Blind-75/Arrays/#problem" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Problem" aria-label="Anchor to: Problem" href="#problem">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+<p>You may assume that each input would have *<strong>exactly* one solution</strong>, and you may not use the <em>same</em> element twice.</p>
+<p>You can return the answer in any order.</p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="solution">
+        Solution
+        <a data-clipboard-text="/Blind-75/Arrays/#solution" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Solution" aria-label="Anchor to: Solution" href="#solution">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>The concept here is to have a dictionary that stores the current value and the key, and the index as the value. This way as we iterate through the list, we can check if the difference already exists in the dictionary. If it does, then we found our answer and return the indices. Otherwise, add the current value and index to the dictionary.</p>
+<p>Time Complexity: O(n)</p>
+<p>Space Complexity: O(n)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">twoSum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hashMap</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">diff</span> <span class="o">=</span> <span class="n">target</span> <span class="o">-</span> <span class="n">n</span> 
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">diff</span> <span class="ow">in</span> <span class="n">hashMap</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="p">[</span><span class="n">hashMap</span><span class="p">[</span><span class="n">diff</span><span class="p">],</span> <span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hashMap</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># No solution found</span>
+</span></span></code></pre></div>
   </article>
 
 
