@@ -11,19 +11,28 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Blind-75/Arrays/</guid>
-      <description>Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
-You can return the answer in any order.
+      <description>Two Sum 📗 Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
 Solution The concept here is to have a dictionary that stores the current value and the key, and the index as the value.</description>
     </item>
     
     <item>
-      <title>Arrays</title>
+      <title>Graphs</title>
       <link>/Blind-75/Graphs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Blind-75/Graphs/</guid>
       <description>Hi</description>
+    </item>
+    
+    <item>
+      <title>Strings</title>
+      <link>/Blind-75/Strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Blind-75/Strings/</guid>
+      <description>Validate Palindrome 📗 Problem A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
+Solution Use regex expressions for speed. Lower the string, remove non-alphanumeric, and compare with backwards version for answer.
+r&#39;[^0-9a-zA-Z]&#39; is an equivalent of saying replace everything that&amp;rsquo;s NOT from 0-9, a-z, or A-Z, notice the ^ is in the square brackets.</description>
     </item>
     
   </channel>

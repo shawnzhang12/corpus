@@ -1,5 +1,5 @@
 ---
-title: "Arrays"
+title: "Graphs"
 weight: -20
 ---
 

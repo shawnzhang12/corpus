@@ -52,5 +52,13 @@ weight: -20
 3. Grab their wrist with closest hand, other arm goes behind then back shoulder
 4. Grab your own wrist and turn perpendicular to them, keep your head away from theirs
 
+### Rear Naked Choke (RNC) :snake:
 
+#### From Back
+
+1. Catch arm deep in
+2. Keep other arm hidden and FAST behind
+3. Grab bicep and keep head close
+4. With hooks or body triangle, push your chest into their back while making the neck triangle smaller
+5. Keep head close, ear-to-ear
 

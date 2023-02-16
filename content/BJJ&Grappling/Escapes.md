@@ -14,3 +14,11 @@ weight: -20
 5. Look over one side and hip bump them 45 degrees to one side
 6. Get ready to start passing if they don't close guard
 
+
+
+### Mount to Back
+
+1. If they have one arm to the side, arm around and gift wrap
+2. One leg across back, other heel into ribs
+3. Turn on one butt cheek and try to land upright with BOTH hooks in
+4. Keep hips aligned, seat beat into fast RNCs
