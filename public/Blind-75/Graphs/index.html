@@ -12,7 +12,7 @@
 <meta name="generator" content="Hugo 0.108.0">
 
 
-  <meta name="description" content="Hi" />
+  <meta name="description" content="Flood Fill 📗 Problem An image is represented by an m x n integer grid image where image[i][j] represents the pixel value of the image. You are also given three integers sr, sc, and color. You should perform a flood fill on the image starting from the pixel image[sr][sc]. To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color), and so on." />
 
     <title>Graphs | Shawn&#39;s Docs</title>
 
@@ -38,7 +38,7 @@
     content="Graphs"
   />
   <meta property="og:site_name" content="Shawn's Docs" />
-  <meta property="og:description" content="Hi" />
+  <meta property="og:description" content="Flood Fill 📗 Problem An image is represented by an m x n integer grid image where image[i][j] represents the pixel value of the image. You are also given three integers sr, sc, and color. You should perform a flood fill on the image starting from the pixel image[sr][sc]. To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color), and so on." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Blind-75/Graphs/" />
 
@@ -47,7 +47,7 @@
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Graphs" />
-  <meta name="twitter:description" content="Hi" />
+  <meta name="twitter:description" content="Flood Fill 📗 Problem An image is represented by an m x n integer grid image where image[i][j] represents the pixel value of the image. You are also given three integers sr, sc, and color. You should perform a flood fill on the image starting from the pixel image[sr][sc]. To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color), and so on." />
 
 
   <script type="application/ld+json">
@@ -58,8 +58,8 @@
       "name": "Graphs",
       "url" : "/Blind-75/Graphs/",
       "headline": "Graphs",
-      "description": "Hi",
-      "wordCount" : "1",
+      "description": "Flood Fill 📗 Problem An image is represented by an m x n integer grid image where image[i][j] represents the pixel value of the image. You are also given three integers sr, sc, and color. You should perform a flood fill on the image starting from the pixel image[sr][sc]. To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color), and so on.",
+      "wordCount" : "288",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1267,6 +1267,42 @@
               
                 <span class="flex">
                   <a
+                    href="/Stretch-Routine-in-the-Making/"
+                    class="gdoc-nav__entry"
+                  >
+                    Stretch Routine in the Making
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
                     href="/Triathlon/"
                     class="gdoc-nav__entry"
                   >
@@ -1492,8 +1528,73 @@
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Graphs</h1>
-    <p>Hi</p>
-
+    <div class="gdoc-page__anchorwrap">
+    <h3 id="flood-fill-">
+        Flood Fill 📗
+        <a data-clipboard-text="/Blind-75/Graphs/#flood-fill-" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Flood Fill 📗" aria-label="Anchor to: Flood Fill 📗" href="#flood-fill-">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="problem">
+        Problem
+        <a data-clipboard-text="/Blind-75/Graphs/#problem" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Problem" aria-label="Anchor to: Problem" href="#problem">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>An image is represented by an <code>m x n</code> integer grid <code>image</code> where <code>image[i][j]</code> represents the pixel value of the image. You are also given three integers <code>sr</code>, <code>sc</code>, and <code>color</code>. You should perform a <strong>flood fill</strong> on the image starting from the pixel <code>image[sr][sc]</code>. To perform a <strong>flood fill</strong>, consider the starting pixel, plus any pixels connected <strong>4-directionally</strong> to the starting pixel of the same color as the starting pixel, plus any pixels connected <strong>4-directionally</strong> to those pixels (also with the same color), and so on. Replace the color of all of the aforementioned pixels with <code>color</code>.</p>
+<p>Return <em>the modified image after performing the flood fill</em>.</p>
+<div class="gdoc-page__anchorwrap">
+    <h5 id="solution">
+        Solution
+        <a data-clipboard-text="/Blind-75/Graphs/#solution" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Solution" aria-label="Anchor to: Solution" href="#solution">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h5>
+</div>
+<p>Our solution will use recursion. Basically we want to check the current pixel and then check its corresponding 4-directionally connected pixels whether they are the same color as the starting pixel or already the desired color.</p>
+<p>In our recursive function,</p>
+<ol>
+<li>
+<p>Check if the current pixel coordinates are out of bounds, if they are we can just return nothing.</p>
+</li>
+<li>
+<p>Check whether the current pixel is not the same color as the starting pixel or that it is already the desired color, if it is return nothing.</p>
+</li>
+<li>
+<p>Change current pixel color to the one desired.</p>
+</li>
+<li>
+<p>Check its surrounding pixels.</p>
+</li>
+</ol>
+<p>Now we just call the function on our starting pixel and it will flood fill the rest.</p>
+<p>Time Complexity: O(mn)</p>
+<p>Space Complexity: O(1)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">floodFill</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">sr</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">sc</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">start_color</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="n">sr</span><span class="p">][</span><span class="n">sc</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">flood_fill</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">image</span><span class="p">)</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">image</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">!=</span> <span class="n">start_color</span> <span class="ow">or</span> <span class="n">image</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">==</span> <span class="n">color</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">image</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">flood_fill</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flood_fill</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flood_fill</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flood_fill</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">flood_fill</span><span class="p">(</span><span class="n">sr</span><span class="p">,</span><span class="n">sc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">image</span>
+</span></span></code></pre></div>
   </article>
 
 

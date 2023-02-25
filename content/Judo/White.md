@@ -24,22 +24,19 @@ all similar
 
 {{< youtube KrMk6G38UaY >}}
 
-### Scarf Hold (Kesa Gatame)
-
-- OTHER arm around neck (compared to side control)
-- other arm constraint opponent wrist and shoulder
-- legs splayed, good to shuffle so doesn't get trapped
-- head close down and tight to opponent
-
-ESCAPE with hip thrust?
-
-transition to shove their arm in their face with your head hold
-
-ESCAPE with back roll
 
 
+## Sweeps
 
-grab their leg hold
+### Inner Foot Sweep
+
+ueu
+
+### Inner Outer Food Sweep
+
+woop
+
+
 
 
 

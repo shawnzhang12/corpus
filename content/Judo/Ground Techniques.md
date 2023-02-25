@@ -36,5 +36,9 @@ eueu
 
 ### 5.  Straight 4 Corner Hold (Tate Shiho Gatame)
 
+## Hold Escapes
 
+ESCAPE with hip thrust?
+
+ESCAPE with back roll
 
